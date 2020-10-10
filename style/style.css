@@ -10,7 +10,7 @@ body {
   width: 100%;
   padding-top: 10px;
   background: none;
-  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
   top: -100px;
@@ -20,7 +20,7 @@ body {
 
 .open-nav .mobile-toggle {
   transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .sticky {
@@ -62,7 +62,7 @@ nav ul {
   text-align: center;
   max-height: 50%;
   padding-right: 2%;
-  -webkit-transition: all 5s;
+  transition: all 5s;
   transition: all 53s;
 }
 
@@ -98,8 +98,8 @@ nav ul a {
   right: 22px;
   top: 0;
   width: 30px;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+   : all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
@@ -125,7 +125,7 @@ nav ul a {
 .hero {
   position: relative;
   background: url('../img/bc.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
+  background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   text-align: center;
@@ -512,12 +512,12 @@ nav ul a {
 }
 
 .order .order__text_price .order__text_price_1 span {
-  transition: 0.5;
+  transition: 0.5s;
   opacity: 0;
 }
 
 .order .order__text_price .order__text_price_2 span {
-  transition: 0.5;
+  transition: 0.5s;
   opacity: 0;
 }
 
