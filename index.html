@@ -1,431 +1,383 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>DjoDjo</title>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="styl.css">
-    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script>
-        $(window).on('load', function() {
-            var $preloader = $('#p_prldr'),
-                $svg_anm = $preloader.find('.svg_anm');
-            $preloader.delay(1700).fadeOut('slow');
-        });
-
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Создание сайтов">
+    <meta name="Keywords" content="Portfolio, создание сайтов, сайт под ключ">
+    <meta name="author" content="Александр Приходько">
+    <meta name="robots" content="index, follow">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <script src="script/preloader.js" defer></script>
+    <script src="script/dataAos.js" defer></script>
+    <script src="script/header.js" defer></script>
+    <script src="script/slide.js" defer></script>
+    <script src="script/pop-up.js" defer></script>
+    <script src="script/indicator.js" defer></script>
+    <script src="script/navigation.js" defer></script>
 </head>
 
 <body>
-    <div id="p_prldr">
-        <div class="contpre">
-            <div class="proloider_blok">
-                <img class="proloider" src="img/stend_1.png" alt="photo">
-                <img class="proloider_2" src="img/stend_3.png" alt="photo">
-                <img class="proloider_3" src="img/stend_2.png" alt="photo">
-                <img class="proloider_4" src="img/stend_4.png" alt="photo">
-                <img class="proloider_5" src="img/stend_5.png" alt="photo">
-            </div>
-        </div>
+    <div id="preloader">
+        <img src="img/icon.png" alt="photo">
     </div>
-    <header>
-        <div class="logo">
-            <a href="#"><img class="logo_photo" src="img/logo.png" alt="photo"></a>
-        </div>
-        <div class="menu">
-            <ul class="menu_select">
-                <li><a href="#">ГЛАВНАЯ</a></li>
-                <li><a href="#">БЛОГ</a></li>
-                <li><a href="#">О САЙТЕ</a></li>
-                <li><a href="#">КУРСЫ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
-            </ul>
-        </div>
-        <div class="link_contact">
-            <a href="#">
-                <img class="link_vk" src="img/VK.png" alt="photo">
-            </a>
-            <a href="#">
-                <img class="link_youtube" src="img/youtube.png" alt="photo">
-            </a>
-        </div>
+    <header class="main_h">
+
+        <div class="row">
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <div class="logo"><a href="#"><img src="img/logo_1.png" alt="logo"></a></div>
+                <ul id="menu">
+                    <li><a class="main_h__link" href="sec01">О нас</a></li>
+                    <li><a class="main_h__link" href="sec02">Товар</a></li>
+                    <li><a class="main_h__link" href="sec03">Продажи</a></li>
+                    <li><a class="main_h__link" href="sec04">Отзывы</a></li>
+                </ul>
+            </nav>
+
+        </div> <!-- / row -->
+
     </header>
-    <main>
-        <div class="content">
-            <div class="banner_1">
-                <div class="banner_1_photo">
-                    <img src="img/jotaro.png" alt="photo">
+
+    <div class="hero">
+
+        <h1>Парагвайское кофе</h1>
+
+    </div>
+
+    <section class="acquaintance sec01">
+        <div class="acquaintance__text">
+            <div class="acquaintance__text_heading">
+                <h2>
+                    <span></span>
+                    Парагвайское кофе
+                    <span></span>
+                </h2>
+            </div>
+            <div class="acquaintance__text_article">
+                <p>
+                    Мы &#60;&#60;የፓራጓይ ቡና&#62;&#62; занимаемся поставкой обжаренного кофе в различные страны мира
+                    прямиком из Парагвая.
+                    Наша деятельность началась ещё в прошлом веке, когда Джордж Ориксон, наш бывший директор, купил
+                    плантацию на юге страны, в близи городка Энкарнасьон. Это был 1976, тогда Джордж даже не мог
+                    представить, как будет развиваться наша компания и как быстро мы выйдем на зарубежный рынок. Мы
+                    поставляем три вида обжаренных кофейных зёрен, с подробным описанием каждого вы можете
+                    познакомиться ниже. Наше производство налажено довольно хорошо, а работники получают только
+                    достойную плату, однако мы соблюдаем довольно консервативный способ обжарки кофе, что сохраняет
+                    прекрасный аромат и вкус после приготовления самого кофе.
+                </p>
+            </div>
+
+            <div class="acquaintance__text_sign">
+                <h2><img src="img/rosp.png" alt="photo"> Эдвард Ориксон</h2>
+            </div>
+        </div>
+        <div class="acquaintance__photo">
+            <img src="img/barista.png" alt="photo">
+        </div>
+        <div class="acquaintance__heading">
+            <h2><span></span>Мы предоставляем несколько<br>видов кофе по степеням обжарки<span></span></h2>
+        </div>
+    </section>
+
+    <section class="product sec02">
+        <div class="product___block_scandinavian" data-aos="fade-up">
+            <div class="product___block_text">
+                <h3 class="product___block_text_heading">Скандинавская обжарка (I степень)</h3>
+                <p class="product___block_text_article">
+                    Готовый кофе коричной обжарки имеет тонкий аромат и неполное тело вкуса. Он некрепкий,
+                    бледно-коричневого цвета.<br><br>
+                    Такой способ обжарки кофейных зёрен подходит для сортов высокогорной арабики.<br><br>
+                    При обжарке зерна начинают источать кисловатый дрожжевой запах, который напоминает аромат
+                    свежеиспеченного хлеба.
+                </p>
+            </div>
+            <div class="product___block_photo">
+                <img src="img/product_1.png" alt="photo">
+            </div>
+        </div>
+        <div class="product___block_urban" data-aos="fade-right">
+            <div class="product___block_photo">
+                <img src="img/product_2.png" alt="photo">
+            </div>
+            <div class="product___block_text">
+                <h3 class="product___block_text_heading">Городская обжарка (IV степень)</h3>
+                <p class="product___block_text_article">
+                    При обжарке City Roast зерна приобретают ореховые нотки, благодаря чему имеет знакомый всем «аромат
+                    кофе».<br><br>
+                    На зернах выступают капли эфирного масла, и выделяется сахар. На вид кофе становится глянцевым, цвет
+                    – коричневый.<br><br>
+                    Вкус напитка становится сладким, с ярким карамельным ароматом.<br><br>
+                    Кроме турки и френч-пресса, зерна городской обжарки подходят для кофемашины.
+                </p>
+            </div>
+        </div>
+        <div class="product___block_american" data-aos="fade-left">
+            <div class="product___block_text">
+                <h3 class="product___block_text_heading">Американская обжарка (III степень)</h3>
+                <p class="product___block_text_article">
+                    Кофейные зерна американской обжарки имеют пестрый рыжий цвет за счет образовавшихся трещин.<br><br>
+                    Кофейный напиток с ощутимой кислинкой и ярким сладковатым ароматом.<br><br>
+                    Обычно, таким способом обжаривают недорогие сорта кофейных зёрен. Американская обжарка подходит для
+                    кофе, приготовленного во френч-прессе или турке.
+                </p>
+            </div>
+            <div class="product___block_photo">
+                <img src="img/product_3.png" alt="photo">
+            </div>
+        </div>
+    </section>
+
+    <section class="sales sec03">
+        <div class="sales__text">
+            <div class="sales__text_heading">
+                <h2>
+                    <span></span>
+                    продажи
+                    <span></span>
+                </h2>
+            </div>
+            <div class="sales__text_article">
+                <p>
+                    С 1985 годы мы активно начали поставлять наше кофе за рубеж. Поставки ведутся строго по расписанию
+                    при помощи кораблей, самолётов и автомобилей. Мы тщательно отбираем поставщиков и следим за тем
+                    чтобы они привозили кофе вовремя и в качественном виде.<br>
+                    <em>Общее число кофейни с которыми мы работаем: 53,725 </em>
+                </p>
+            </div>
+            <div class="sales__text_map">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order">
+        <div class="pop-up__piece" style="display: none;">
+            <div class="pop-up__piece_block">
+                <div class="pop-up__piece_scrin">
+                    <div class="pop-up__piece_scrin_photo">
+                        <img src="img/product_1.png" class="pop-up__piece_photo_product1" style="display: none"
+                            alt="photo">
+                        <img src="img/product_3.png" class="pop-up__piece_photo_product3" style="display: none"
+                            alt="photo">
+                        <img src="img/product_2.png" class="pop-up__piece_photo_product2" style="display: none"
+                            alt="photo">
+                    </div>
+                    <div class="pop-up__piece_scrin_text">
+                        <h3>Заказ на покупку оптом</h3>
+                        <form class="pop-up__piece_scrin_form">
+                            <label class="pop-up__piece_scrin_form_label">Имя: <input type="text" name="name"></label>
+                            <label class="pop-up__piece_scrin_form_label">@mail: <input type="text"
+                                    name="email"></label>
+                            <p><label>
+                                    <input id="indicator_scandinavian" type="checkbox" name="scandinavian">
+                                    <span></span>
+                                    <i class="indicator"></i>
+                                </label> Скандинавская </p>
+                            <p><label>
+                                    <input id="indicator_urban" type="checkbox" name="urban">
+                                    <span></span>
+                                    <i class="indicator"></i>
+                                </label> Городская </p>
+                            <p><label>
+                                    <input id="indicator_american" type="checkbox" name="american">
+                                    <span></span>
+                                    <i class="indicator"></i>
+                                </label> Американская</p>
+                        </form>
+                    </div>
                 </div>
-                <div class="banner_1_text">
-                    <h1>ПОДПИСЫВАЙСЯ!</h1>
-                    <p>Манга и аниме рассказывает о приключениях героев, которых всех объединяет прозвище ДжоДжо, которое складывается из начальных или финальных слогов их имён (Джонатан Джостар, Куджо Джотаро и т.д., за исключением Джоске Хигашикаты в двух его версиях), при этом они так или иначе являются членами семьи Джостаров или её побочных линий.</p>
+                <div class="pop-up__piece_text">
+                    <button class="pop-up__piece_text_cancel">Отмена</button>
+                    <button class="pop-up__text_confirm">Подтвердить</button>
+                </div>
+                <div class="pop-up__attention" style="display: none;">
                     <p>
-                        Особенностью манги является деление на части, каждая из которых имеет свой жанр, сеттинг и главного героя. Сюжетно они связаны незначительно, но обычно встречаются камео героев из прошлых частей.</p>
-                    <p>
-                        В каждой из частей у главного героя имеется сверхсила, с помощью которых он противостоит врагам, имеющим аналогичные или иные способности.</p>
-                    <p>
-                        Значимую роль в манге занимают отсылки к музыке, высокой моде и кухне.</p>
-                    <form>
-                        <input type="email" placeholder="Укажите ваш e-mail">
-                        <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
+                        Данный сайте не является сайтом компании &#60;&#60;የፓራጓይ ቡና&#62;&#62;, если такая конечно
+                        существует)<br> Сайт создан для портфолию WEb разработчика, чтобы потенциальные клиенты могли
+                        понять мои способности.
+                    </p>
+                    <button class="pop-up__attention_button">Понятно</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up__wholesale" style="display: none;">
+            <div class="pop-up__wholesale_block">
+                <div class="pop-up__wholesale_scrin">
+                    <h3>Заказ на покупку оптом</h3>
+                    <form class="pop-up__wholesale_scrin_form">
+                        <label>Имя: <input type="text" name="name"></label>
+                        <label>Фамилия: <input type="text" name="last_name"></label>
+                        <label>@mail: <input type="text" name="email"></label>
+                        <label>Страна: <input type="text" name="country"></label>
                     </form>
-                    <button type="reset">ПОДПИСАТЬСЯ!</button>
                 </div>
-            </div>
-            <!--end-->
-
-            <div class="banner_2">
-                <div class="banner_2_text1">
-                    <div  class="banner_2_text1_articles">
-                        <img src="img/palnaref.jpg" alt="photo">
-                        <h1>Жан-Пьер Польнарефф</h1>
-                    </div>
-                    <div class="banner_2_text1_articles2">
-                        <div class="banner_2_text_artaclec2_0">
-                            <div class="banner_2_text1_articles2_text1">
-                                <p class="name">Имя</p>
-                                <p class="stend">Стенд</p>
-                                <p class="season">Сезон</p>
-                            </div>
-                            <div class="banner_2_text1_articles2_text2">
-                                <p>20 октября 2019</p>
-                            </div>
-                        </div>
-                        <div class="banner_2_text_artaclec2_1">
-                            <p>
-                                Шумный весельчак, вечно занятый погоней за очередной юбкой, Польнарефф был рождён вместе со своим....
-                            </p>
-                        </div>
-                        <div class="banner_2_text_artaclec2_2">
-
-                            <div class="banner2_link">
-                                <a href="#">Читать и комментировать</a>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="pop-up__wholesale_text">
+                    <button class="pop-up__wholesale_text_cancel">Отмена</button>
+                    <button class="pop-up__text_confirm">Подтвердить</button>
                 </div>
-                <div class="banner_3_text2">
-                    <div class="banner_3_text2_articles">
-                        <img src="img/abdyl.jpg" alt="photo">
-                        <h1>Мохаммед Абдул</h1>
-                    </div>
-                    <div class="banner_3_text2_articles3">
-                        <div class="banner_3_text_artaclec3_0">
-                            <div class="banner_3_text2_articles3_text2">
-                                <p class="name">Имя</p>
-                                <p class="stend">Стенд</p>
-                                <p class="season">Сезон</p>
-                            </div>
-                            <div class="banner_3_text2_articles3_text3">
-                                <p>23 октября 2018</p>
-                            </div>
-                        </div>
-                        <div class="banner_3_text_artaclec3_2">
-                            <p>
-                                Уличный предсказатель родом из Египта. Член команды Джозефа Джостара и его близкий друг. Предан своим...
-                            </p>
-                        </div>
-                        <div class="banner_3_text_artaclec3_3">
-                            <div class="banner2_link">
-                                <a href="#">Читать и комментировать</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="banner_3">
-                <div class="banner_2_text1">
-                    <div class="banner_2_text1_articles">
-                        <img src="img/koichi.jpg" alt="photo">
-                        <h1>Коичи Хиросэ</h1>
-                    </div>
-                    <div class="banner_2_text1_articles2">
-                        <div class="banner_2_text_artaclec2_0">
-                            <div class="banner_2_text1_articles2_text1">
-                                <p class="name">Имя</p>
-                                <p class="stend">Стенд</p>
-                                <p class="season">Сезон</p>
-                            </div>
-                            <div class="banner_2_text1_articles2_text2">
-                                <p>10 января 2018</p>
-                            </div>
-                        </div>
-                        <div class="banner_2_text_artaclec2_1">
-                            <p>
-                                Один из второстепенных персонажей в «Несокрушимом алмазе». Появляется на первых страницах манги, где....
-                            </p>
-                        </div>
-                        <div class="banner_2_text_artaclec2_2">
-                            <div class="banner2_link">
-                                <a href="#">Читать и комментировать</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner_3_text2">
-                    <div class="banner_3_text2_articles">
-                        <img src="img/kakein.jpg" alt="photo">
-                        <h1>Нориаки Какёин</h1>
-                    </div>
-                    <div class="banner_3_text2_articles3">
-                        <div class="banner_3_text_artaclec3_0">
-                            <div class="banner_3_text2_articles3_text2">
-                                <p class="name">Имя</p>
-                                <p class="stend">Стенд</p>
-                                <p class="season">Сезон</p>
-                            </div>
-                            <div class="banner_3_text2_articles3_text3">
-                                <p>23 октября 2018</p>
-                            </div>
-                        </div>
-                        <div class="banner_3_text_artaclec3_2">
-                            <p>
-                                Старшеклассник, путешествовавший по Египту. Во время своей поездки он встретил Дио...
-                            </p>
-                        </div>
-                        <div class="banner_3_text_artaclec3_3">
-                            <div class="banner2_link">
-                                <a href="#">Читать и комментировать</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="banner_4">
-                <div class="banner_2_text1">
-                    <div class="banner_2_text1_articles">
-                        <img src="img/djovano.jpg" alt="photo">
-                        <h1>Джорно Джованна</h1>
-                    </div>
-                    <div class="banner_2_text1_articles2">
-                        <div class="banner_2_text_artaclec2_0">
-                            <div class="banner_2_text1_articles2_text1">
-                                <p class="name">Имя</p>
-                                <p class="stend">Стенд</p>
-                                <p class="season">Сезон</p>
-                            </div>
-                            <div class="banner_2_text1_articles2_text2">
-                                <p>16 апреля 2019</p>
-                            </div>
-                        </div>
-                        <div class="banner_2_text_artaclec2_1">
-                            <p>
-                                Главный герой «Золотого ветра». Сын японки и Дио Брандо, но биологически считается сыном Джонатана, так...
-                            </p>
-                        </div>
-                        <div class="banner_2_text_artaclec2_2">
-                            <div class="banner2_link">
-                                <a href="#">Читать и комментировать</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="banner_3_text2">
-                    <div class="banner_3_text2_articles">
-                        <img src="img/dio.jpg" alt="photo">
-                        <h1>Дио Брандо </h1>
-                    </div>
-                    <div class="banner_3_text2_articles3">
-                        <div class="banner_3_text_artaclec3_0">
-                            <div class="banner_3_text2_articles3_text2">
-                                <p class="name">Имя</p>
-                                <p class="stend">Стенд</p>
-                                <p class="season">Сезон</p>
-                            </div>
-                            <div class="banner_3_text2_articles3_text3">
-                                <p>23 октября 2018</p>
-                            </div>
-                        </div>
-                        <div class="banner_3_text_artaclec3_2">
-                            <p>
-                                Главный антагонист первой и третьей части «Невероятных приключений ДжоДжо». Злейший враг семьи...
-                            </p>
-                        </div>
-                        <div class="banner_3_text_artaclec3_3">
-                            <div class="banner2_link">
-                                <a href="#">Читать и комментировать</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="banner_5">
-                <div class="banner_5_text1">
-                    <a href="#">
-                        <div class="banner_5_text1_photo">
-                            <img src="img/iggi.png" alt="photo">
-                        </div>
-                        <div class="banner_5_text1_text">
-                            <p>
-                                Игги - как самый гордый и беспощадный товарищ.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="banner_5_text2">
-                    <a href="#">
-                        <div class="banner_5_text1_photo">
-                            <img src="img/dgozef.png" alt="photo">
-                        </div>
-                        <div class="banner_5_text1_text">
-                            <p>
-                                Джозеф, англичанин овладевший двумя способностями.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="banner_5_text3">
-                    <a href="#">
-                        <div class="banner_5_text1_photo">
-                            <img src="img/buchelati.jpg" alt="photo">
-                        </div>
-                        <div class="banner_5_text1_text">
-                            <p>
-                                Тёмная лошадка для всего пассионе.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="banner_5_text4">
-                    <a href="#">
-                        <div class="banner_5_text1_photo">
-                            <img src="img/fugo.png" alt="photo">
-                        </div>
-                        <div class="banner_5_text1_text">
-                            <p>
-                                Пусть страна знает предателя в лицо <i class="fa fa-frown-o" aria-hidden="true"></i>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="banner_5_text5">
-                    <a href="#">
-                        <div class="banner_5_text1_photo">
-                            <img src="img/mista.jpg" alt="photo">
-                        </div>
-                        <div class="banner_5_text1_text">
-                            <p>
-                                Вот это мужик а вы девчонки и дальше любите своих эмобоев, <span>
-                                    они же такие классные и крутые.
-                                </span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="banner_5_text6">
-                    <a href="#">
-                        <div class="banner_5_text1_photo">
-                            <img src="img/kira.jpg" alt="photo">
-                        </div>
-                        <div class="banner_5_text1_text">
-                            <p>
-                                Антагонист с интересными взглядами на жизнь.
-                            </p>
-                        </div>
-                    </a>
+                <div class="pop-up__attention" style="display: none;">
+                    <p>
+                        Данный сайте не является сайтом компании &#60;&#60;የፓራጓይ ቡና&#62;&#62;, если такая конечно
+                        существует)<br> Сайт создан для портфолию WEb разработчика, чтобы потенциальные клиенты могли
+                        понять мои способности.
+                    </p>
+                    <button class="pop-up__attention_button">Понятно</button>
                 </div>
             </div>
         </div>
 
-        <div class="articles">
-            <div class="articles_banner_1">
-                <a href="https://shikimori.one/animes/14719-jojo-no-kimyou-na-bouken-tv">
-                    <div class="articles_banner_1_advertising">
-                        <img src="img/shikimori_advertising.jpg" alt="photo">
-                    </div>
-                </a>
-            </div>
-            <div class="aricles_banner2_and_3">
-                <div class="articles_banner_2">
-                    <div class="articles_banner_2_headline">
-                        <h1>Записи по рубрикам</h1>
-                    </div>
-                    <div class="articles_banner_2_link">
-                        <a href="#">Манга</a>
-                        <a href="#">Аниме</a>
-                        <a href="#">Спин-оффы</a>
-                        <a href="#">Новеллы</a>
-                        <a href="#">Стенды</a>
-                        <a href="#">Термины</a>
-                        <a href="#">Локации</a>
-                        <a href="#">Персонажи</a>
-                    </div>
-                </div>
-                <div class="articles_banner_3">
-                    <div class="articles_banner_3_headline">
-                        <h1>Самое интересное</h1>
-                    </div>
-                    <div class="articles_banner_3_link">
-                        <a href="#">Главные герои</a>
-                        <a href="#">Вампиры</a>
-                        <a href="#">Артефакты</a>
-                        <a href="#">Фигурки</a>
-                        <a href="#">Постеры</a>
-                        <a href="#">Отсылки</a>
-                        <a href="#">Видеоигры</a>
-                        <a href="#">Артбуки</a>
-                    </div>
-                </div>
-            </div>
+        <div class="order__text_heading">
+            <h2>
+                <span></span>
+                Заказать
+                <span></span>
+            </h2>
+        </div>
+        <div class="order__text_article">
+            <p>
+                Мы ведём продажу кофе по двум тарифам
+                Первый тариф позволяет закупать кофе поштучно, а второй оптом
+                Пожалуйста, выберите тот, который вас устроит больше
+            </p>
+        </div>
+        <div class="order__text_price">
+            <div class="order__text_price_1" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
-            <div class="articles_banner4_and_5">
-                <div class="articles_banner_4">
-                    <div class="articles_banner_4_photo">
-                        <img src="img/enia.jpg" alt="photo">
-                    </div>
-                    <div class="articles_banner_4_text">
-                        <p>Рецепт от Эньи.
-                            Чтобы получить стенд надо раз в день...<a href="#">Узнать</a>
-                        </p>
-                    </div>
+                <div class="order__text_price_1_text">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h3>Поштучно</h3>
+                    <ul>
+                        <li>До 100 пачек</li>
+                        <li>В любую точку мира</li>
+                        <li>Быстрее чем оптом</li>
+                        <li>Несколько видов оплаты</li>
+                    </ul>
                 </div>
-
-                <div class="articles_banner_5">
-                    <div class="articles_banner_5_photo">
-                        <img src="img/dio_head.jpg" alt="photo">
-                    </div>
-                    <div class="articles_banner_5_text">
-                        <p>Польнарефф ужаснулся, когда узнал кто будет править пассионе...<a href="#">Узнать</a>
-                        </p>
-                    </div>
-                </div>
+                <button id="price_1">Заказать</button>
             </div>
-            <div class="articles_banner_6">
-                <div class="articles_banner_6_headline">
-                    <h1>Список стендов</h1>
+            <div class="order__text_price_2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <div class="order__text_price_2_text">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h3>Оптом</h3>
+                    <ul>
+                        <li>Больше 100 пачек</li>
+                        <li>В любую точку мира</li>
+                        <li>Несколько видов оплаты</li>
+                        <li>Скидка в 10%</li>
+                        <li>Постоянная связь с клиентом</li>
+                    </ul>
                 </div>
-                <div class="articles_banner_6_link">
-                    <a href="#">Star Platinum</a>
-                    <a href="#">Magician's Red</a>
-                    <a href="#">Hermit Purple</a>
-                    <a href="#">Hierophant Green</a>
-                    <a href="#">Silver Chariot</a>
-                    <a href="#">The Fool</a>
-                    <a href="#">The World</a>
-                    <a href="#">Crazy Diamond</a>
-                </div>
+                <button id="price_2">Заказать</button>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <div class="footer_text">
-            <p>Подпишись и получай новые статьи прямо на почту:</p>
+    <section class="reviews sec04">
+        <div class="reviews__heading">
+            <h2>
+                <span></span>
+                Отзывы
+                <span></span>
+            </h2>
         </div>
-        <div class="mailing">
-            <form>
-                <input type="email" placeholder="Укажите ваш e-mail">
-                <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
-                <button type="reset">ПОДПИСАТЬСЯ!</button>
-            </form>
+        <div class="reviews__slider">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <q>Я люблю кофе, и довольно часто покупаю именно у &#60;&#60;የፓራጓይ ቡና&#62;&#62;. Привозят всегда в
+                        срок и без всяких проблем.</q>
+                    <p class="author">- Павел Степанов. Москва</p>
+                </div>
+
+                <div class="mySlides">
+                    <q>Как хорошо выпить чашку кофе рано утром. И как же приятно осознавать, что это кофе пришло к тебе
+                        с другого конца мира. Спасибо, за эти тёплые чувства.</q>
+                    <p class="author">- Эльса Юнссон. Осло</p>
+                </div>
+
+                <div class="mySlides">
+                    <q>Моя кофейня находиться недалеко от центра города, поэтому хочется иметь в наличии только хорошее
+                        кофе. Мне повстречались многие поставщики кофе, из Индии и Малазии. Но именно &#60;&#60;የፓራጓይ
+                        ቡና&#62;&#62; подарили мне уверенность, что мои клиенты будут довольны.</q>
+                    <p class="author">- Оджас Айчара. Мумбай</p>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__text">
+            <h2>
+                парагввайское кофе
+            </h2>
+        </div>
+        <div class="footer__contacts">
+            <div class="footer__contacts_phone">
+                <ul>
+                    <li>+908 000 000 000</li>
+                    <li>+423 111 111 111</li>
+                    <li>+233 222 222 222</li>
+                </ul>
+            </div>
+            <div class="footer__contacts_mail">
+                <ul>
+                    <li>почта 1</li>
+                    <li>почта 2</li>
+                    <li>почта 3</li>
+                </ul>
+            </div>
+            <div class="footer__contacts_social_network">
+                <div class="footer__contacts_social_network_link">
+                    <a href="#">
+                        <img src="img/face.png" alt="link_face">
+                    </a>
+                    <a href="#">
+                        <img src="img/insta.png" alt="link_insta">
+                    </a>
+                </div>
+                <div class="footer__contacts_social_network_link">
+                    <a href="#">
+                        <img src="img/twit.png" alt="link_twit">
+                    </a>
+                    <a href="#">
+                        <img src="img/vk.png" alt="link_vk">
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- leafletjs -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="script/leaflet.js" defer></script>
+    <!-- aosjs -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
