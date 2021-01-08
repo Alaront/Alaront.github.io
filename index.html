@@ -1,383 +1,210 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Создание сайтов">
-    <meta name="Keywords" content="Portfolio, создание сайтов, сайт под ключ">
-    <meta name="author" content="Александр Приходько">
-    <meta name="robots" content="index, follow">
     <title>Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link href="style/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media.css">
-    <link rel="stylesheet" href="style/leaflet.css">
-    <script src="script/leaflet.js" defer></script>
-    <script src="script/preloader.js" defer></script>
-    <script src="script/leaflet_me.js" defer></script>
-    <script src="script/dataAos.js" defer></script>
-    <script src="script/header.js" defer></script>
-    <script src="script/slide.js" defer></script>
-    <script src="script/pop-up.js" defer></script>
-    <script src="script/indicator.js" defer></script>
-    <script src="script/navigation.js" defer></script>
+    <link rel="stylesheet" href="style/style_media.css">
+    <script src="script/menu.js" defer=""></script>
+    <script src="script/main.js" defer=""></script>
+    <script src="script/constructor.js" defer=""></script>
+    <script src="script/preloader.js" defer=""></script>
+    <script src="script/scroll.js" defer=""></script>
 </head>
 
 <body>
     <div id="preloader">
-        <img src="img/icon.png" alt="photo">
+        <img src="img/logo.png" alt="photo">
     </div>
-    <header class="main_h">
 
-        <div class="row">
-            <div class="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header>
+        <div class="menu">
+            <div class="menu__links">
+                <div class="menu__block">
+                    <div class="block__circle close">
+                        <div class="block__circle_ful">
+                            <div class="block__lines">
+                                <div class="block__line"></div>
+                                <div class="block__line"></div>
+                                <div class="block__line"></div>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li><a class="links_nav"  href="#characteristic_link">характеристики</a></li>
+                                    <li><a class="links_nav"  href="#features_link">особенности</a></li>
+                                    <li><a class="links_nav" href="#constructor_link">модели</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <nav>
-                <div class="logo"><a href="#"><img src="img/logo_1.png" alt="logo"></a></div>
-                <ul id="menu">
-                    <li><a class="main_h__link" href="sec01">О нас</a></li>
-                    <li><a class="main_h__link" href="sec02">Товар</a></li>
-                    <li><a class="main_h__link" href="sec03">Продажи</a></li>
-                    <li><a class="main_h__link" href="sec04">Отзывы</a></li>
-                </ul>
-            </nav>
-
-        </div> <!-- / row -->
-
+            <div class="menu_logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+        </div>
     </header>
 
-    <div class="hero">
-
-        <h1>Парагвайское кофе</h1>
-
-    </div>
-
-    <section class="acquaintance sec01">
-        <div class="acquaintance__text">
-            <div class="acquaintance__text_heading">
-                <h2>
-                    <span></span>
-                    Парагвайское кофе
-                    <span></span>
-                </h2>
+    <main>
+        <div class="mainInfo">
+            <div class="mainInfo__text">
+                <h1 id="text_info">R</h1>
+                <p>Самый быстрый автомобиль в мире, с рекордным ускорением, дальностью и производительностью.</p>
             </div>
-            <div class="acquaintance__text_article">
-                <p>
-                    Мы &#60;&#60;የፓራጓይ ቡና&#62;&#62; занимаемся поставкой обжаренного кофе в различные страны мира
-                    прямиком из Парагвая.
-                    Наша деятельность началась ещё в прошлом веке, когда Джордж Ориксон, наш бывший директор, купил
-                    плантацию на юге страны, в близи городка Энкарнасьон. Это был 1976, тогда Джордж даже не мог
-                    представить, как будет развиваться наша компания и как быстро мы выйдем на зарубежный рынок. Мы
-                    поставляем три вида обжаренных кофейных зёрен, с подробным описанием каждого вы можете
-                    познакомиться ниже. Наше производство налажено довольно хорошо, а работники получают только
-                    достойную плату, однако мы соблюдаем довольно консервативный способ обжарки кофе, что сохраняет
-                    прекрасный аромат и вкус после приготовления самого кофе.
-                </p>
-            </div>
-
-            <div class="acquaintance__text_sign">
-                <h2><img src="img/rosp.png" alt="photo"> Эдвард Ориксон</h2>
+            <div class="mainInfo__photo">
+                <img src="img/car_header_.png" alt="photo">
             </div>
         </div>
-        <div class="acquaintance__photo">
-            <img src="img/barista.png" alt="photo">
+        <div class="mainText">
+            <div class="mainText__characteristic">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                <div class="mainText__characteristic_text">
+                    <h2>Максимальная скорость</h2>
+                    <p>400 км/ч</p>
+                </div>
+            </div>
+            <div class="mainText__characteristic">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <div class="mainText__characteristic_text">
+                    <h2>Разгон с 0 до 100 км/ч </h2>
+                    <p>2.1 сек</p>
+                </div>
+            </div>
+            <div class="mainText__characteristic">
+                <i class="fa fa-bolt" aria-hidden="true"></i>
+                <div class="mainText__characteristic_text">
+                    <h2>Мощность </h2>
+                    <p>772 л.с.</p>
+                </div>
+            </div>
         </div>
-        <div class="acquaintance__heading">
-            <h2><span></span>Мы предоставляем несколько<br>видов кофе по степеням обжарки<span></span></h2>
+    </main>
+
+    <article id="characteristic_link">
+        <h2>Базовые характеристики</h2>
+        <div class="characteristic">
+            <p class="characteristic_info">Разгон 0-100 км/ч</p>
+            <p class="characteristic_date">2.1 сек.</p>
+        </div>
+        <div class="characteristic">
+            <p class="characteristic_info">Ускорение 1/4 мили</p>
+            <p class="characteristic_date">8,8 сек.</p>
+        </div>
+        <div class="characteristic">
+            <p class="characteristic_info">Максимальная Скорость</p>
+            <p class="characteristic_date">Более 400 км/ч</p>
+        </div>
+        <div class="characteristic">
+            <p class="characteristic_info">Крутящий Момент Колеса</p>
+            <p class="characteristic_date">10 000 Нм</p>
+        </div>
+        <div class="characteristic">
+            <p class="characteristic_info">Километровый Диапазон</p>
+            <p class="characteristic_date">1000 километров</p>
+        </div>
+        <div class="characteristic">
+            <p class="characteristic_info">Сиденье</p>
+            <p class="characteristic_date">4</p>
+        </div>
+    </article>
+
+    <section>
+        <div class="container">
+            <img src="img/for_slider_1.jpg" alt="photo">
+            <img src="img/for_slider_2.jpg" alt="photo">
+            <img src="img/for_slider_3.jpg" alt="photo">
+            <img src="img/for_slider_4.jpg" alt="photo">
         </div>
     </section>
 
-    <section class="product sec02">
-        <div class="product___block_scandinavian" data-aos="fade-up">
-            <div class="product___block_text">
-                <h3 class="product___block_text_heading">Скандинавская обжарка (I степень)</h3>
-                <p class="product___block_text_article">
-                    Готовый кофе коричной обжарки имеет тонкий аромат и неполное тело вкуса. Он некрепкий,
-                    бледно-коричневого цвета.<br><br>
-                    Такой способ обжарки кофейных зёрен подходит для сортов высокогорной арабики.<br><br>
-                    При обжарке зерна начинают источать кисловатый дрожжевой запах, который напоминает аромат
-                    свежеиспеченного хлеба.
-                </p>
+    <figure  id="features_link">
+        <h2>Особенности спорткара</h2>
+        <div class="features">
+            <div class="features__text">
+                <h3>Тип привода</h3>
+                <p>Полный</p>
             </div>
-            <div class="product___block_photo">
-                <img src="img/product_1.png" alt="photo">
+            <div class="features__text">
+                <h3>Усилитель руля</h3>
+                <p>Электроусилитель</p>
             </div>
-        </div>
-        <div class="product___block_urban" data-aos="fade-right">
-            <div class="product___block_photo">
-                <img src="img/product_2.png" alt="photo">
+            <div class="features__text">
+                <h3>Коробка передач</h3>
+                <p>Автомат</p>
             </div>
-            <div class="product___block_text">
-                <h3 class="product___block_text_heading">Городская обжарка (IV степень)</h3>
-                <p class="product___block_text_article">
-                    При обжарке City Roast зерна приобретают ореховые нотки, благодаря чему имеет знакомый всем «аромат
-                    кофе».<br><br>
-                    На зернах выступают капли эфирного масла, и выделяется сахар. На вид кофе становится глянцевым, цвет
-                    – коричневый.<br><br>
-                    Вкус напитка становится сладким, с ярким карамельным ароматом.<br><br>
-                    Кроме турки и френч-пресса, зерна городской обжарки подходят для кофемашины.
-                </p>
+            <div class="features__text">
+                <h3>Тип двигателя</h3>
+                <p>Электро</p>
             </div>
         </div>
-        <div class="product___block_american" data-aos="fade-left">
-            <div class="product___block_text">
-                <h3 class="product___block_text_heading">Американская обжарка (III степень)</h3>
-                <p class="product___block_text_article">
-                    Кофейные зерна американской обжарки имеют пестрый рыжий цвет за счет образовавшихся трещин.<br><br>
-                    Кофейный напиток с ощутимой кислинкой и ярким сладковатым ароматом.<br><br>
-                    Обычно, таким способом обжаривают недорогие сорта кофейных зёрен. Американская обжарка подходит для
-                    кофе, приготовленного во френч-прессе или турке.
-                </p>
-            </div>
-            <div class="product___block_photo">
-                <img src="img/product_3.png" alt="photo">
-            </div>
+    </figure>
+
+    <section>
+        <div class="parallax">
+            <h2>ROADSTER</h2>
+            <div class="parallax__line1"></div>
+            <div class="parallax__line2"></div>
         </div>
     </section>
 
-    <section class="sales sec03">
-        <div class="sales__text">
-            <div class="sales__text_heading">
-                <h2>
-                    <span></span>
-                    продажи
-                    <span></span>
-                </h2>
+    <section id="constructor_link">
+        <h2>Предлогаемые модели</h2>
+        <div class="constructor">
+            <div class="constructor__photo">
+                <img src="img/car_for_color1.png" style="display: none;" class="constructor__choice_photo" alt="photo">
+                <img src="img/car_for_color2.png" style="display: none;" class="constructor__choice_photo" alt="photo">
+                <img src="img/car_for_color3.png" style="display: none;" class="constructor__choice_photo" alt="photo">
+                <img src="img/car_for_color4.png" style="display: block;" class="constructor__choice_photo" alt="photo">
             </div>
-            <div class="sales__text_article">
-                <p>
-                    С 1985 годы мы активно начали поставлять наше кофе за рубеж. Поставки ведутся строго по расписанию
-                    при помощи кораблей, самолётов и автомобилей. Мы тщательно отбираем поставщиков и следим за тем
-                    чтобы они привозили кофе вовремя и в качественном виде.<br>
-                    <em>Общее число кофейни с которыми мы работаем: 53,725 </em>
-                </p>
-            </div>
-            <div class="sales__text_map">
-                <div id="map"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="order">
-        <div class="pop-up__piece" style="display: none;">
-            <div class="pop-up__piece_block">
-                <div class="pop-up__piece_scrin">
-                    <div class="pop-up__piece_scrin_photo">
-                        <img src="img/product_1.png" class="pop-up__piece_photo_product1" style="display: none"
-                            alt="photo">
-                        <img src="img/product_3.png" class="pop-up__piece_photo_product3" style="display: none"
-                            alt="photo">
-                        <img src="img/product_2.png" class="pop-up__piece_photo_product2" style="display: none"
-                            alt="photo">
-                    </div>
-                    <div class="pop-up__piece_scrin_text">
-                        <h3>Заказ на покупку оптом</h3>
-                        <form class="pop-up__piece_scrin_form">
-                            <label class="pop-up__piece_scrin_form_label">Имя: <input type="text" name="name"></label>
-                            <label class="pop-up__piece_scrin_form_label">@mail: <input type="text"
-                                    name="email"></label>
-                            <p><label>
-                                    <input id="indicator_scandinavian" type="checkbox" name="scandinavian">
-                                    <span></span>
-                                    <i class="indicator"></i>
-                                </label> Скандинавская </p>
-                            <p><label>
-                                    <input id="indicator_urban" type="checkbox" name="urban">
-                                    <span></span>
-                                    <i class="indicator"></i>
-                                </label> Городская </p>
-                            <p><label>
-                                    <input id="indicator_american" type="checkbox" name="american">
-                                    <span></span>
-                                    <i class="indicator"></i>
-                                </label> Американская</p>
-                        </form>
-                    </div>
+            <div class="constructor__choice">
+                <div class="constructor__choice_colors">
+                    <div class="constructor__choice_color"></div>
+                    <div class="constructor__choice_color"></div>
+                    <div class="constructor__choice_color"></div>
+                    <div class="constructor__choice_color color_active"></div>
                 </div>
-                <div class="pop-up__piece_text">
-                    <button class="pop-up__piece_text_cancel">Отмена</button>
-                    <button class="pop-up__text_confirm">Подтвердить</button>
-                </div>
-                <div class="pop-up__attention" style="display: none;">
-                    <p>
-                        Данный сайте не является сайтом компании &#60;&#60;የፓራጓይ ቡና&#62;&#62;, если такая конечно
-                        существует)<br> Сайт создан для портфолию WEb разработчика, чтобы потенциальные клиенты могли
-                        понять мои способности.
-                    </p>
-                    <button class="pop-up__attention_button">Понятно</button>
-                </div>
-            </div>
-        </div>
-        <div class="pop-up__wholesale" style="display: none;">
-            <div class="pop-up__wholesale_block">
-                <div class="pop-up__wholesale_scrin">
-                    <h3>Заказ на покупку оптом</h3>
-                    <form class="pop-up__wholesale_scrin_form">
-                        <label>Имя: <input type="text" name="name"></label>
-                        <label>Фамилия: <input type="text" name="last_name"></label>
-                        <label>@mail: <input type="text" name="email"></label>
-                        <label>Страна: <input type="text" name="country"></label>
-                    </form>
-                </div>
-                <div class="pop-up__wholesale_text">
-                    <button class="pop-up__wholesale_text_cancel">Отмена</button>
-                    <button class="pop-up__text_confirm">Подтвердить</button>
-                </div>
-                <div class="pop-up__attention" style="display: none;">
-                    <p>
-                        Данный сайте не является сайтом компании &#60;&#60;የፓራጓይ ቡና&#62;&#62;, если такая конечно
-                        существует)<br> Сайт создан для портфолию WEb разработчика, чтобы потенциальные клиенты могли
-                        понять мои способности.
-                    </p>
-                    <button class="pop-up__attention_button">Понятно</button>
+                <div class="constructor__choice_input">
+                    <label><input type="radio" name="car" value="ie">
+                        <p>Базовое Бронирование € 43.000</p>
+                    </label>
+                    <label><input type="radio" name="car" value="ie">
+                        <p>Бронирование серии Founders € 215.000</p>
+                    </label>
                 </div>
             </div>
         </div>
 
-        <div class="order__text_heading">
-            <h2>
+        <div class="buyButton">
+            <a href="#">
                 <span></span>
-                Заказать
                 <span></span>
-            </h2>
-        </div>
-        <div class="order__text_article">
-            <p>
-                Мы ведём продажу кофе по двум тарифам
-                Первый тариф позволяет закупать кофе поштучно, а второй оптом
-                Пожалуйста, выберите тот, который вас устроит больше
-            </p>
-        </div>
-        <div class="order__text_price">
-            <div class="order__text_price_1" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-
-                <div class="order__text_price_1_text">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <h3>Поштучно</h3>
-                    <ul>
-                        <li>До 100 пачек</li>
-                        <li>В любую точку мира</li>
-                        <li>Быстрее чем оптом</li>
-                        <li>Несколько видов оплаты</li>
-                    </ul>
-                </div>
-                <button id="price_1">Заказать</button>
-            </div>
-            <div class="order__text_price_2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                <div class="order__text_price_2_text">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <h3>Оптом</h3>
-                    <ul>
-                        <li>Больше 100 пачек</li>
-                        <li>В любую точку мира</li>
-                        <li>Несколько видов оплаты</li>
-                        <li>Скидка в 10%</li>
-                        <li>Постоянная связь с клиентом</li>
-                    </ul>
-                </div>
-                <button id="price_2">Заказать</button>
-            </div>
+                <span></span>
+                <span></span>
+                BUY NOW
+            </a>
         </div>
     </section>
 
-    <section class="reviews sec04">
-        <div class="reviews__heading">
-            <h2>
-                <span></span>
-                Отзывы
-                <span></span>
-            </h2>
-        </div>
-        <div class="reviews__slider">
-            <div class="slideshow-container">
-
-                <div class="mySlides">
-                    <q>Я люблю кофе, и довольно часто покупаю именно у &#60;&#60;የፓራጓይ ቡና&#62;&#62;. Привозят всегда в
-                        срок и без всяких проблем.</q>
-                    <p class="author">- Павел Степанов. Москва</p>
-                </div>
-
-                <div class="mySlides">
-                    <q>Как хорошо выпить чашку кофе рано утром. И как же приятно осознавать, что это кофе пришло к тебе
-                        с другого конца мира. Спасибо, за эти тёплые чувства.</q>
-                    <p class="author">- Эльса Юнссон. Осло</p>
-                </div>
-
-                <div class="mySlides">
-                    <q>Моя кофейня находиться недалеко от центра города, поэтому хочется иметь в наличии только хорошее
-                        кофе. Мне повстречались многие поставщики кофе, из Индии и Малазии. Но именно &#60;&#60;የፓራጓይ
-                        ቡና&#62;&#62; подарили мне уверенность, что мои клиенты будут довольны.</q>
-                    <p class="author">- Оджас Айчара. Мумбай</p>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-
+    <footer>
+        <div class="contacts">
+            <div class="contacts_company">
+                <h3>О компании</h3>
+                <a>История</a>
+                <a>Награды</a>
+                <a>Официальные дилеры</a>
             </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer__text">
-            <h2>
-                парагввайское кофе
-            </h2>
-        </div>
-        <div class="footer__contacts">
-            <div class="footer__contacts_phone">
-                <ul>
-                    <li>+908 000 000 000</li>
-                    <li>+423 111 111 111</li>
-                    <li>+233 222 222 222</li>
-                </ul>
-            </div>
-            <div class="footer__contacts_mail">
-                <ul>
-                    <li>почта 1</li>
-                    <li>почта 2</li>
-                    <li>почта 3</li>
-                </ul>
-            </div>
-            <div class="footer__contacts_social_network">
-                <div class="footer__contacts_social_network_link">
-                    <a href="#">
-                        <img src="img/face.png" alt="link_face">
-                    </a>
-                    <a href="#">
-                        <img src="img/insta.png" alt="link_insta">
-                    </a>
-                </div>
-                <div class="footer__contacts_social_network_link">
-                    <a href="#">
-                        <img src="img/twit.png" alt="link_twit">
-                    </a>
-                    <a href="#">
-                        <img src="img/vk.png" alt="link_vk">
-                    </a>
-                </div>
+            <div class="contacts_relation">
+                <h3>Связь</h3>
+                <a>Служба поддержки</a>
+                <a>Горячая линия</a>
             </div>
         </div>
     </footer>
-
-
-    <!-- aosjs -->
-    <script src="script/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
-
+ 
 </html>
