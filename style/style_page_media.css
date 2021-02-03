@@ -1,0 +1,28 @@
+@media only screen and (max-width: 768px) {
+      header h2{
+        font-size: 40px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .text {
+        width: 90%;
+    }
+
+    main .text .text__main p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    article .content .content__chose{
+        width: 90%;
+    }
+    
+    article .content .content__chose div{
+        width: 40%;
+    }
+}

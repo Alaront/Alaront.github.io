@@ -1,17 +1,22 @@
-let open_menu = () =>{
-    let block = document.getElementsByClassName('block__circle')[0];
-
-
-    if(block.classList.contains('open')){
-        block.classList.remove('open');
-        block.classList.add('close');
-    }else if(block.classList.contains('close')){
-        block.classList.remove('close');
-        block.classList.add('open');
+let change = (i) =>{
+    let button = document.getElementsByClassName('content__chose__button');
+    let informs = document.getElementsByClassName('content__elems__soups');
+    for(let i  = 0; i < button.length; i++){
+        button[i].classList.remove("active");
     }
+    button[i].classList.add("active")
+
+    for(let i  = 0; i < informs.length; i++){
+        informs[i].classList.add("no_active");
+        informs[i].classList.remove("active")
+    }
+    informs[i].classList.remove("no_active")
+    informs[i].classList.add("active")
 
 }
 
-document.getElementsByClassName('block__circle_ful')[0].onclick = function (){
-    open_menu();
+let button = document.getElementsByClassName('content__chose__button');
+for(let i  = 0; i < button.length; i++){
+    button[i].addEventListener('click', () => change(i), false);
 }
+

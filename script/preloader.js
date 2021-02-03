@@ -9,5 +9,5 @@ window.onload = function(event){
 
     setTimeout(()=>{
         preloader.style.display = 'none'
-    }, 1000)
+    }, 1200)
 }
