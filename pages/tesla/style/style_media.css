@@ -1,0 +1,310 @@
+@media only screen and (max-width: 900px) {
+    main .mainInfo {
+        flex-direction: column;
+    }
+
+    main .mainInfo .mainInfo__text {
+        width: 70%;
+        margin-top: 2.5%;
+    }
+
+    main .mainInfo .mainInfo__photo {
+        width: 80%;
+        margin: 1% auto;
+    }
+
+    main .mainText {
+        flex-direction: column;
+    }
+
+    main .mainText .mainText__characteristic {
+        margin-bottom: 3%;
+    }
+
+    main .mainText .mainText__characteristic i {
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    section .parallax h2 {
+        font-size: 100px;
+        width: 80%;
+        height: 50%;
+    }
+
+    section .parallax .parallax__line1 {
+        width: 80%;
+        height: 60%;
+    }
+
+    section .parallax:hover .parallax__line1 {
+        left: 10%;
+        top: 20%;
+    }
+
+    section .parallax .parallax__line2 {
+        bottom: 35%;
+        right: 0;
+        width: 80%;
+        height: 60%;
+    }
+
+    section .parallax:hover .parallax__line2 {
+        right: 10%;
+    }
+
+    section .constructor {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    section .constructor .constructor__choice {
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    section .constructor .constructor__choice .constructor__choice_colors {
+        flex-wrap: wrap;
+    }
+
+    section .constructor .constructor__choice .constructor__choice_colors .constructor__choice_color {
+        margin: 1%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        justify-content: space-around;
+    }
+
+    main .mainInfo .mainInfo__text {
+        width: 90%;
+        margin-top: 6%;
+    }
+
+    main .mainInfo .mainInfo__text h1 {
+        font-size: 90px;
+    }
+
+    main .mainInfo .mainInfo__text p {
+        font-size: 25px;
+    }
+
+    main .mainText {
+        flex-direction: row;
+    }
+
+    main .mainText .mainText__characteristic i {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    main .mainText .mainText__characteristic .mainText__characteristic_text h2 {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    main .mainText .mainText__characteristic .mainText__characteristic_text p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    footer .contacts .contacts_company,
+    footer .contacts .contacts_relation {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main .mainInfo .mainInfo__text h1 {
+        font-size: 60px;
+    }
+
+    main .mainInfo .mainInfo__text p {
+        font-size: 20px;
+    }
+
+    main .mainText .mainText__characteristic {
+        justify-content: flex-start;
+    }
+
+    figure .features {
+        flex-direction: column;
+        background-image: none;
+    }
+
+    figure .features .features__text:nth-child(1) h3::before,
+    figure .features .features__text:nth-child(3) h3::before {
+        content: none;
+    }
+
+    figure .features .features__text:nth-child(2) h3::before,
+    figure .features .features__text:nth-child(4) h3::before {
+        content: none;
+    }
+
+
+    figure .features .features__text:nth-child(1) h3 {
+        width: 90%;
+    }
+
+    figure .features .features__text:nth-child(1) p {
+        width: 90%;
+    }
+
+    figure .features .features__text:nth-child(2) h3 {
+        width: 90%;
+    }
+
+    figure .features .features__text:nth-child(2) p {
+        width: 90%;
+    }
+
+    figure .features .features__text:nth-child(3) h3 {
+        width: 90%;
+    }
+
+    figure .features .features__text:nth-child(3) p {
+        width: 90%;
+    }
+
+    figure .features .features__text:nth-child(4) h3 {
+        width: 90%;
+    }
+
+    figure .features .features__text:nth-child(4) p {
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+    main .mainText {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main .mainText .mainText__characteristic {
+        width: 100%;
+    }
+
+    section .parallax h2 {
+        font-size: 50px;
+        width: 80%;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 1224px) {
+    main .mainText {
+        width: 90%;
+        margin: 5% 5% 0% 5%;
+    }
+
+    article .characteristic {
+        margin: 0% auto;
+        width: 90%;
+        align-items: center;
+    }
+
+    article .characteristic p {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    figure .features {
+        flex-direction: column;
+        background-size: 70%;
+        background-position: 90% 30%;
+    }
+
+    figure .features .features__text {
+        width: 80%;
+        min-height: 100px;
+    }
+
+    figure .features .features__text h3 {
+        font-size: 20px;
+    }
+
+    figure .features .features__text:nth-child(1) h3 {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(1) p {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(2) h3 {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(2) p {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(3) h3 {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(3) p {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(4) h3 {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(4) p {
+        margin: 0% 0%;
+        text-align: left;
+    }
+
+    figure .features .features__text:nth-child(1) h3::before,
+    figure .features .features__text:nth-child(3) h3::before {
+        right: 0%;
+        top: 90%;
+    }
+
+    figure .features .features__text:nth-child(2) h3::before,
+    figure .features .features__text:nth-child(4) h3::before {
+        left: 100%;
+        top: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    article .characteristic {
+        margin: 0% auto;
+        width: 95%;
+    }
+
+    article .characteristic p {
+        font-size: 15px;
+        color: #ffffff;
+    }
+
+
+    section .constructor .constructor__choice .constructor__choice_input label p {
+        font-size: 15px;
+    }
+
+    footer .contacts {
+        flex-direction: column;
+    }
+
+    footer .contacts .contacts_company,
+    footer .contacts .contacts_relation {
+        width: 60%;
+    }
+}

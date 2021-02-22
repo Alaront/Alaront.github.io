@@ -1,0 +1,713 @@
+#myVideo {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-image: url(../img/video/Restaurant.mp4);
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+}
+
+
+#section1 .layer {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
+#section1 h2 {
+  font-family: Raleway;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#section1 h2 span {
+  font-family: Raleway;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@keyframes i_anima {
+  0% {
+    bottom: 8%;
+    font-size: 25px;
+  }
+
+  50% {
+    bottom: 3%;
+    ;
+    font-size: 35px;
+  }
+
+  100% {
+    bottom: 8%;
+    font-size: 25px;
+  }
+}
+
+#section1 i {
+  color: #000000;
+  position: absolute;
+  bottom: 10%;
+  left: 49%;
+  animation: i_anima 2s linear infinite;
+}
+
+#infoMenu li a {
+  color: #fff;
+}
+
+#section1 {
+  overflow: hidden;
+}
+
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 5%;
+}
+
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#menu li a img {
+  width: 100%;
+  transition: 0.5s all;
+}
+
+#menu li a:hover img {
+  transform: rotate(-40deg);
+}
+
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+
+#menu li.active a {
+  color: #fff;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.section article {
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section article .article {
+  width: 40%;
+  height: 80%;
+}
+
+.section article .article .article__title {
+  width: 100%;
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+}
+
+.section article .article .article__text {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000000;
+}
+
+.section article .photo {
+  width: 40%;
+  margin-left: 5%;
+}
+
+.section article .photo .photo__line1,
+.section article .photo .photo__line2 {
+  width: 100%;
+}
+
+.section article .photo .photo__line2 {
+  margin-left: 6%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.section article .photo img {
+  margin: 1%;
+}
+
+.section article .photo .photo__line1 img:nth-child(1) {
+  width: 45%;
+}
+
+.section article .photo .photo__line1 img:nth-child(2) {
+  width: 35%;
+}
+
+.section article .photo .photo__line2 img:nth-child(1) {
+  width: 30%;
+}
+
+.section article .photo .photo__line2 img:nth-child(2) {
+  width: 50%;
+}
+
+.section section {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.section section .posts {
+  width: 85%;
+  margin: 0% auto;
+}
+
+.section section .posts__title {
+  padding: 5% 5% 3% 5%;
+  margin: 0%;
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+}
+
+.section section .posts__blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.section section .posts__blocks .posts__blocks__elem {
+  width: 25%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section section .posts__blocks .posts__blocks__elem div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section section .posts__blocks .posts__blocks__elem div h3 {
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  margin: 0%;
+  padding: 3%;
+}
+
+.section section .posts__blocks .posts__blocks__elem div p {
+  font-family: Raleway;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+  text-align: justify;
+  width: 90%;
+  margin: 0% auto;
+  padding: 0%;
+}
+
+.section section .posts__blocks .posts__blocks__elem a {
+  font-size: 18px;
+  text-decoration: underline;
+  text-align: right;
+  margin: 3%;
+  padding: 4% 0% 0% 0%;
+  color: #000000;
+  align-self: flex-end
+}
+
+.section main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/bc_menu.jpg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
+}
+
+.section main .menu {
+  padding: 3% 5% 0% 10%;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.section main .menu__part1 {
+  margin: 0%;
+  padding: 0%;
+  width: 50%;
+}
+
+.section main .menu__part1 .menu__part1__title {
+  margin: 0%;
+  padding: 0%;
+}
+
+.section main .menu__part1 .menu__part1__title h2 {
+  margin: 0%;
+  padding: 0%;
+  font-family: Raleway;
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.section main .menu__part1 .menu__part1__title h2 span {
+  display: block;
+  font-size: 30px;
+}
+
+.section main .menu__part1 .menu__part1__text h3 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 4% 0% 0% 10%;
+  padding: 1.5% 0% 0% 0%;
+}
+
+.section main .menu__part1 .menu__part1__text p {
+  font-family: Raleway;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 10%;
+}
+
+.section main .menu__part2 {
+  margin: 0%;
+  padding: 0%;
+  width: 50%;
+}
+
+.section main .menu__part2 .menu__part2__text h3 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 9% 0% 0% 10%;
+  padding: 2% 0% 0% 0%;
+}
+
+.section main .menu__part2 .menu__part2__text p {
+  font-family: Raleway;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 10%;
+}
+
+.section main a {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #3e3e3e;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  display: block;
+  margin: 0% auto;
+  margin-top: 2%;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+}
+
+#section5 section {
+  height: 100vh;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#section5 section .bc_left {
+  width: 50%;
+  height: 100%;
+}
+
+#section5 section .bc_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 80% 80%;
+}
+
+#section5 section .form {
+  width: 50%;
+  height: 100%;
+  margin: 0%;
+  padding: 20% 8% 13% 7%;
+}
+
+#section5 section .form h2 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+  text-align: right;
+  margin: 0%;
+  padding: 0%;
+}
+
+#section5 section .form form {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#section5 section .form form p {
+  width: 40%;
+  padding: 0%;
+  margin-bottom: 10%;
+  border-bottom: 1px solid #000000;
+}
+
+#section5 section .form form p label {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+#section5 section .form form p label input {
+  border: none;
+  padding: 2%;
+  font-family: Raleway;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+}
+
+#section5 section .form form button {
+  padding: 1% 13%;
+  margin-top: 5%;
+  border: 2.5px solid #000000;
+  font-family: Raleway;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 200;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#section5 section .form form p label input:active,
+input:hover,
+input:focus {
+  outline: none;
+}
+
+section .parallax {
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  background-image: url(../img/rest_otz1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+section .parallax .parallax__text {
+  width: 60%;
+  padding-left: 5%;
+  text-align: left;
+  margin-top: 10%;
+}
+
+section .parallax .parallax__text h3 {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+section .parallax .parallax__text span {
+  display: block;
+  margin: 0%;
+  padding: 0%;
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+section .parallax .parallax__text p {
+  margin: 0%;
+  padding: 5% 0%;
+  font-family: TimesNewPSMT;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+}
+
+section .parallax .parallax__photo {
+  width: 40%;
+  height: 100%;
+}
+
+section .parallax .parallax__photo img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.1s ease; 
+}
+
+
+
+.section footer {
+  height: 100vh;
+  width: 100%;
+  margin: 0%;
+  padding: 5%;
+  background-color: black;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.section footer .map {
+  width: 30%;
+  height: 70%;
+}
+
+.section footer .map h2 {
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0%;
+  margin: 0% 0% 0% 2%;
+}
+
+.section footer .contac {
+  width: 45%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+.section footer .map #map {
+  margin-top: 10%;
+  height: 80%;
+}
+
+.section footer .contac .contac__tel1 h3,
+.section footer .contac .contac__tel2 h3,
+.section footer .contac .contac__mel h3 {
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0%;
+  padding: 0%;
+}
+
+.section footer .contac .contac__tel1 p,
+.section footer .contac .contac__tel2 p,
+.section footer .contac .contac__mel p {
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0%;
+  padding: 0%;
+}
+
+.section footer .contac .contac__links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.section footer .contac .contac__links a {
+  width: 18%;
+  margin: 0% 1%;
+  padding: 0%;
+}
+
+.section footer .contac .contac__links a img {
+  width: 100%;
+}
+
+.section .anima_add{
+  transform: translate(0px, -50px);
+  transition: 1.0s all;
+}
+
+.active .anima_add{
+  transform: translate(0px, 0px);
+  transition-delay: 700ms;
+}
+
+#preloader {
+  position: fixed;
+  min-height: 100vh;
+  background: rgb(0,0,0);
+  background-color: #ffffff;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader img {
+  width: 10%;
+  animation: animaPrel 2s linear infinite;
+}
+
+@keyframes animaPrel {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader_end{
+  animation: animaPrelEnd 2s linear infinite;
+}
+
+@keyframes animaPrelEnd {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+#info__block {
+  width: 20%;
+  position: fixed;
+  bottom: 10%;
+  left: -3%;
+  z-index: 11000;
+  transform: rotate(45deg);
+}
+
+#info__block .info__text{
+  margin: 0%;
+  text-align: center;
+}
+
+#info__block .info__text a{
+  width: 100%;
+  padding: 2% 5%;
+  height: 100%;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 200;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-family:'Arial';
+}

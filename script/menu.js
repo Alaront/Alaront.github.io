@@ -1,22 +1,13 @@
-let change = (i) =>{
-    let button = document.getElementsByClassName('content__chose__button');
-    let informs = document.getElementsByClassName('content__elems__soups');
-    for(let i  = 0; i < button.length; i++){
-        button[i].classList.remove("active");
-    }
-    button[i].classList.add("active")
+let menu_event = () =>{
+    let menu = document.getElementById("menu");
 
-    for(let i  = 0; i < informs.length; i++){
-        informs[i].classList.add("no_active");
-        informs[i].classList.remove("active")
+    if(menu.classList.contains("open")){
+        menu.classList.remove("open");
+        menu.classList.add("close");
+    }else{
+        menu.classList.remove("close");
+        menu.classList.add("open");
     }
-    informs[i].classList.remove("no_active")
-    informs[i].classList.add("active")
-
 }
 
-let button = document.getElementsByClassName('content__chose__button');
-for(let i  = 0; i < button.length; i++){
-    button[i].addEventListener('click', () => change(i), false);
-}
-
+document.getElementsByClassName("button")[0].addEventListener('click', menu_event);

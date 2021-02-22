@@ -1,276 +1,236 @@
 @media only screen and (max-width: 1224px) {
-
-
-    section .parallax .parallax__photo {
-        width: 70%;
-        height: 100%;
+    .close {
+        left: -30%;
     }
 
-    section .parallax .parallax__photo img {
-        width: 100%;
-        margin: 10% 0% 0% 0%;
+    .charts .charts__chart div {
+        min-width: 40%;
+      }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .close {
+        left: -35%;
     }
-    
+
+
 }
 
 @media only screen and (max-width: 900px) {
-    #section1 h2 {
-        font-size: 40px;
+    nav .menu {
+        padding-right: 10%;
     }
 
-    #section1 h2 span {
-        font-size: 19px;
-    }
-
-    .section section .posts__blocks .posts__blocks__elem div img {
-        width: 50%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .section section .posts__blocks .posts__blocks__elem div h3 {
-        font-size: 20px;
-    }
-
-    .section section .posts__blocks .posts__blocks__elem div p {
-        font-size: 15px;
-    }
-
-    .section section .posts__blocks {
-        flex-wrap: wrap;
-
-    }
-
-    .section section .posts__blocks .posts__blocks__elem {
-        width: 40%;
-    }
-
-    .section main .menu__part1 .menu__part1__title h2 {
-        font-size: 50px;
-    }
-
-    .section main .menu__part1 .menu__part1__title h2 span {
-        font-size: 25px;
-    }
-
-    .section main .menu__part1 .menu__part1__text h3 {
-        font-size: 25px;
-    }
-
-    .section main .menu__part1 .menu__part1__text p {
-        font-size: 18px;
-    }
-
-    .section main .menu__part2 .menu__part2__text h3 {
-        font-size: 25px;
-    }
-
-    .section main .menu__part2 .menu__part2__text p {
-        font-size: 18px;
-    }
-
-    .section main a {
-        font-size: 25px;
-        width: 35%;
-        margin-top: 15%;
-    }
-
-    section .parallax .parallax__photo {
-        display: none;
-    }
-
-    section .parallax .parallax__text {
-        width: 80%;
-        margin-top: 0%;
-    }
-
-    section .parallax {
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .section article .photo {
-        display: none;
-    }
-
-    .section article .article {
-        width: 95%;
-        height: 80%;
-    }
-
-    .section main .menu__part1 .menu__part1__title h2 {
+    header .text .text__title-1 {
         font-size: 30px;
     }
 
-    .section main .menu__part1 .menu__part1__title h2 span {
-        font-size: 20px;
+    header .text .text__title-main {
+        font-size: 85px;
     }
 
-    .section main .menu__part1 .menu__part1__text h3 {
-        font-size: 20px;
-    }
-
-    .section main .menu__part1 .menu__part1__text p {
-        font-size: 18px;
-    }
-
-    .section main .menu__part2 .menu__part2__text h3 {
-        font-size: 20px;
-    }
-
-    .section main .menu__part2 .menu__part2__text p {
-        font-size: 18px;
-    }
-
-    .section main a {
+    header .text .text__title-2 {
         font-size: 25px;
-        width: 25%;
-        margin-top: 15%;
     }
 
-    .section main .menu__part1,
-    .section main .menu__part2 {
-        width: 60%;
-    }
-
-    .section main a {
-        font-size: 25px;
-        width: 35%;
-        margin-top: 15%;
-    }
-
-    .section footer {
+    .charts .charts__chart {
         flex-direction: column;
-      }
-
-      .section footer .map {
-        width: 80%;
-        height: 100%;
+        margin: 0% auto;
       }
       
-      .section footer .map h2 {
-          padding-top: 2%;
+      .charts .charts__chart div {
+        width: 90%;
+        margin: 0% auto;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    nav .menu {
+        padding-right: 15%;
+    }
+
+    .whatCan h2, .charts h2, .myWork h2, .process h2, .offer h2 {
+        font-size: 35px;
+    }
+
+    .whatCan .whatCan__main .whatCan__main-text h3 {
+        font-size: 25px;
+      }
+      
+      .whatCan .whatCan__main .whatCan__main-text li {
         font-size: 20px;
       }
 
-      .section footer .contac {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 90%;
-        margin-top: 8%;
+      .process .process__main {
+        width: 95%;
+        margin: 0% auto;
+        flex-direction: column;
+      }
+      
+      .process .process__main div {
+        width: 50%;
+        margin-bottom: 3%;
+      }
+
+      .process .process__main .process__main-bord {
+          display: none;
+      }
+
+      .offer .offer__main {
+        width: 95%;
+      }
+      
+      .offer .offer__main .offer__main__info {
+        width: 40%;
       }
 }
 
 @media only screen and (max-width: 650px) {
 
-    .section main .menu__part1,
-    .section main .menu__part2 {
-        width: 80%;
-    }
-
-    .section main .menu {
-        flex-direction: column;
-    }
-
-    .section main .menu__part2 .menu__part2__text h3 {
-        margin-top: 1%;
-    }
-
-    .section main a {
-        font-size: 18px;
-        width: 25%;
-        margin-top: 1%;
-    }
-
-    #section5 section .bc_left {
-        width: 30%;
-    }
-
-
-    #section5 section .form {
-        width: 70%;
-        height: 100%;
-        margin: 0%;
-        padding: 20% 8% 13% 7%;
-    }
-
-    #section5 section .form form p {
-        width: 60%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #section1 h2 {
-        font-size: 30px;
-    }
-
-    #section1 h2 span {
-        font-size: 15px;
-    }
-
-    #section5 section .bc_left {
-        display: none;
-    }
-
-
-    #section5 section .form {
-        width: 100%;
-    }
-
-    #section5 section .form form p {
-        width: 60%;
-    }
-
-    #section5 section .form h2 {
-        font-size: 25px;
-    }
-
-    
-section .parallax .parallax__text h3 {
-    font-size: 30px;
-  }
-  
-  section .parallax .parallax__text span {
-    font-size: 18px;
-  }
-  
-  section .parallax .parallax__text p {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-    #section1 h2 {
+    nav .menu ul li a {
         font-size: 20px;
     }
 
-    #section1 h2 span {
+    nav .menu span {
         font-size: 15px;
+        margin-left: 3%;
     }
+
+    .offer .offer__main .offer__main__info h3 {
+        font-size: 25px;
+      }
+      
+      .offer .offer__main .offer__main__info ul {
+        font-size: 15px;
+      }
 }
 
 @media only screen and (max-width: 550px) {
-    .section section .posts__blocks {
-        flex-wrap: wrap;
+    nav .menu {
+        padding-right: 20%;
     }
 
-    .section section .posts__blocks .posts__blocks__elem div img {
-        display: none;
-    }
-
-    .section section .posts__blocks .posts__blocks__elem {
-        width: 90%;
-        margin-top: 8%;
-        flex-direction: row;
-    }
-
-    .section section .posts__blocks .posts__blocks__elem div h3 {
+    nav .menu ul li a {
         font-size: 15px;
     }
 
-    .section section .posts__blocks .posts__blocks__elem div p {
-        font-size: 12px;
+    nav .menu span {
+        font-size: 10px;
+        margin-left: 1%;
+    }
+
+    nav .button {
+        margin-left: 25%;
+    }
+
+    header .text .text__title-1 {
+        font-size: 25px;
+    }
+
+    header .text .text__title-main {
+        font-size: 65px;
+    }
+
+    header .text .text__title-2 {
+        font-size: 20px;
+    }
+
+    .whatCan h2, .charts h2, .myWork h2, .process h2, .offer h2 {
+        font-size: 25px;
+    }
+
+    .whatCan .whatCan__main .whatCan__main-text h3 {
+        font-size: 20px;
+      }
+      
+      .whatCan .whatCan__main .whatCan__main-text li {
+        font-size: 15px;
+      }
+}
+
+@media only screen and (max-width: 400px) {
+
+    header .text .text__title-1 {
+        font-size: 20px;
+    }
+
+    header .text .text__title-main {
+        font-size: 45px;
+    }
+
+    header .text .text__title-2 {
+        font-size: 15px;
+    }
+
+    .whatCan .whatCan__main {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .whatCan .whatCan__main .whatCan__main-text {
+        width: 90%;
+        border-right: none;
+        margin: 0% auto;
+      }
+
+      .whatCan .whatCan__main .whatCan__main-text h3 {
+        margin: 1% 0%;
+      }
+      
+      .whatCan .whatCan__main .whatCan__main-text ul {
+        margin-top: 0%;
+      }
+      
+      .whatCan .whatCan__main .whatCan__main-text li {
+        margin-top: 0%;
+      }
+      
+      .charts .charts__chart {
+        margin: 0% auto;
+        width: 100%;
+      }
+
+      .charts .charts__chart div {
+        width: 100%;
+      }
+
+      .myWork .myWorks__examples {
+        width: 90%;
+        margin: 0% auto;
+      }
+
+      
+      .offer .offer__main .offer__main__info {
+        width: 50%;
+      }
+
+      .offer .offer__main .offer__main__info h3 {
+        font-weight: 100;
+      }
+      
+      .offer .offer__main .offer__main__info ul {
+        font-size: 13px;
+        font-weight: 400;
+      }
+      
+}
+
+@media only screen and (max-width: 375px) {
+      .charts .charts__chart {
+        margin: 0% auto;
+        width: 100%;
+      }
+
+      .charts .charts__chart div {
+        width: 100%;
+      }
+
+      footer .footerMain .footerMain__block p {
+        font-size: 15px;
+      }
+
+      nav .menu {
+        padding-right: 3%;
     }
 }
