@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style_media.css" />
+    <link rel="stylesheet" href="style/leaflet.css">
+    <link rel="stylesheet" href="style/aos.css">
+
+    <script src="script/parallax.js" defer></script>
+    <script src="script/gallery.js" defer></script>
+    <script src="script/slider.js" defer></script>
+    <script src="script/statistics.js" defer></script> 
+    <script src="script/leaflet.js" defer></script>
+    <script src="script/mapCreate.js" defer></script>
+    <script src="script/menu.js" defer></script>
+    <script src="script/preloader.js" defer=""></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="img/logo.png" alt="photo">
+    </div>
+
+    <nav class="menu">
+        <div class="menu__logo">
+            <img class="menu__logo__img" src="img/logo.png" alt="logo">
+        </div>
+        <div class="menu__link noActive">
+            <ul>
+                <li><a href="#id_main">Заповедник</a></li>
+                <li><a href="#id_gallery">Галерея</a></li>
+                <li><a href="#id_steps">Открыте</a></li>
+                <li><a href="#id_service">Сервис</a></li>
+                <li><a href="#id_team">Команда</a></li>
+                <li><a href="#id_footer">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header__title">
+            <h2><span>Новый</span> заповедник<br />в Танзании</h2>
+        </div>
+
+        <div class="header__elems">
+            <img class="parallax__elems_photo1" src="img/header/stone.png" alt="stone" />
+            <img class="parallax__elems_photo2" src="img/header/elephant.png" alt="elephant" />
+            <img class="parallax__elems_photo1" src="img/header/stone.png" alt="stone" />
+        </div>
+    </header>
+
+    <main id="id_main" class="main">
+        <div class="main__text">
+            <div class="main__text_title">
+                <h1>
+                    <span>Заповедник</span><br />
+                    <span>М</span>асаи-Мара
+                </h1>
+            </div>
+            <div class="main__text_info">
+                <p>
+                    <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        facilisis molestie dignissim. Nulla pellentesque et nisi et
+                        euismod. Pellentesque quis tristique magna.</i>
+                </p>
+                <p>
+                    Маса́и-Ма́ра — заповедник на юго-западе Кении, в округе Нарок.
+                    Является северным продолжением Национального парка Серенгети.
+                    <span>Заповедник</span> назван в честь племени масаи — традиционного
+                    населения региона и реки Мара, которая разделяет его. Масаи-Мара
+                    знаменит большим количеством обитающих в нём <span>животных</span>,
+                    а также ежегодной миграцией гну, проходящей в сентябре и октябре.
+                </p>
+            </div>
+        </div>
+        <div  data-aos="fade-up" class="main__items">
+            <div class="main__items_elem">
+                <img src="img/icons/outline_light_mode_black_24dp.png" alt="icon">
+                <strong>Климат</strong>
+                <p>Климат здесь довольно мягок. Днём может быть <span>жарко</span>, лучше одеваться в одежду из
+                    натуральных тканей. Дождливых периодов два – с марта по апрель и в ноябре. </p>
+            </div>
+            <div class="main__items_elem">
+                <img src="img/icons/outline_landscape_black_24dp.png" alt="icon">
+                <strong>Ландшафт</strong>
+                <p>Располагается Масаи-Мара в саванне, которую пересекают <span>реки</span> Мара и Талек, и занимает
+                    1510 км2.</p>
+            </div>
+            <div class="main__items_elem">
+                <img src="img/icons/outline_pets_black_24dp.png" alt="icon">
+                <strong>Животные</strong>
+                <p>Поездку по дикой территории в Кении принято называть «сафари». Значение «охота» появилось с приходом
+                    белых, а <span>вообще</span> это слово на суахили значит «путешествие».</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="id_gallery" class="gallery">
+        <div class="gallery__title">
+            <h2><span>О</span>битатели <span>П</span>арка</h2>
+        </div>
+        <div class="gallery__menu">
+            <ul>
+                <li class="active">Все обитатели</li>
+                <li>Крокодл</li>
+                <li>Бегемот</li>
+                <li>Лев</li>
+                <li>Слон</li>
+            </ul>
+        </div>
+        <div class="gallery__photo">
+            <div class="gallery__photo_item"><img src="img/gallery/5.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/2.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/8.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/6.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/9.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/10.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/1.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/3.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/4.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/11.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/7.jpg" alt="photo"></div>
+            <div class="gallery__photo_item"><img src="img/gallery/12.jpg" alt="photo"></div>
+        </div>
+    </section>
+
+    <section id="id_steps" class="steps">
+        <div class="steps__title">
+            <h2><span>П</span>роцесс <span>О</span>ткрытия</h2>
+        </div>
+        <div class="step__text">
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla
+                pellentesque et nisi et euismod. Pellentesque quis tristique magna.</strong>
+            <p>Заповедник Масаи-Мара располагается в юго-заподной части Кении и представляет собой северное продолжение
+                Национального парка Серенгети. Общая площадь заповедника равна 1510 км2.В территориальном отношении
+                Масаи-Мара не самый значительной заповедник Кении, однако его, пожалуй, можно назвать самым известным.
+                Он полностью расположен в громадной Восточно-Африканской рифтовой системе, которая раскидывается от
+                Южной Африки до Красного моря. В 220 км от Найроби располагается Восточная граница, поэтому именно
+                восточный район Масаи-Мара чаще всего посещают туристы. На территории национального заповедника
+                Масаи-Мара господствует субэкваториальный климат. Наиболее холодным месяцем является июль, а самым
+                теплым – февраль. Влажных сезона два: сухой в июле-августе, а чётко выраженный в марте-мае. Для
+                заповедника характерны достаточно прохладные вечера, особенно в июне и июле: в это время температура
+                может понизиться до 10 °C. Период с декабря по март является наиболее теплой и солнечной порой года.</p>
+        </div>
+        <div class="steps__items">
+            <div data-aos="fade-up"  class="steps__items_item">
+                <div class="steps__items_item-img">
+                    <img src="img/steps/document.jpg" alt="photo">
+                </div>
+                <div class="steps__items_item-text">
+                    <h3>Шаг первый</h3>
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</strong>
+                    <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris
+                        id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus
+                        egestas eu</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="steps__items_item">
+                <div class="steps__items_item-text">
+                    <h3>Шаг второй</h3>
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</strong>
+                    <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris
+                        id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus
+                        egestas eu</p>
+                </div>
+                <div class="steps__items_item-img">
+                    <img src="img/steps/working.jpg" alt="photo">
+                </div>
+            </div>
+            <div data-aos="fade-up"  class="steps__items_item">
+                <div class="steps__items_item-img">
+                    <img src="img/steps/savana.jpg" alt="photo">
+                </div>
+                <div class="steps__items_item-text">
+                    <h3>Шаг третий</h3>
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</strong>
+                    <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris
+                        id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus
+                        egestas eu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="id_service">
+        <div class="service__title">
+            <h2><span>Н</span>аш <span>С</span>ервис</h2>
+        </div>
+        <div class="service__text">
+            <div class="service__text__items">
+                <h3>Охрана животных</h3>
+                <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                    molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam.
+                    Suspendisse justo sem, molestie tincidunt </p>
+            </div>
+            <div class="service__text__items">
+                <h3>Документальные фильмы</h3>
+                <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                    molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam.
+                    Suspendisse justo sem, molestie tincidunt </p>
+            </div>
+            <div class="service__text__items">
+                <h3>Туризм</h3>
+                <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                    molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam.
+                    Suspendisse justo sem, molestie tincidunt </p>
+            </div>
+            <div class="service__text__items">
+                <h3>Фотосессии</h3>
+                <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                    molestie tincidunt Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam.
+                    Suspendisse justo sem, molestie tincidunt </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="id_team" class="team">
+        <div class="team__text">
+            <div class="team__text__title">
+                <h2><span>Н</span>аша <span>К</span>оманда</h2>
+            </div>
+            <div class="team__text__inform">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla
+                    pellentesque et nisi et euismod. Pellentesque quis tristique magna.</p>
+                <p>Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                    molestie tincidunt</p>
+            </div>
+        </div>
+        <div data-aos="fade-up"  class="team__person">
+            <div class="team__person__item">
+                <div class="team__person__item__photo"><img src="img/team/stalk.jpg" alt="photo"></div>
+                <h4>John Doe</h4>
+                <p>CoFounder / CEO</p>
+            </div>
+            <div class="team__person__item">
+                <div class="team__person__item__photo"><img src="img/team/hat.jpg" alt="photo"></div>
+                <h4>John Doe</h4>
+                <p>CoFounder / CEO</p>
+            </div>
+            <div class="team__person__item">
+                <div class="team__person__item__photo"><img src="img/team/human.jpg" alt="photo"></div>
+                <h4>John Doe</h4>
+                <p>CoFounder / CEO</p>
+            </div>
+            <div class="team__person__item">
+                <div class="team__person__item__photo"><img src="img/team/man.jpg" alt="photo"></div>
+                <h4>John Doe</h4>
+                <p>CoFounder / CEO</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews__title">
+            <h2><span>О</span>тзывы</h2>
+        </div>
+
+        <div class="reviews__slider">
+            <div class="reviews__slider__item">
+                <div class="slideText">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</strong>
+                    <p>
+                        Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt
+                    </p>
+                </div>
+                <div class="slidePhoto">
+                    <div class="slidePhoto__photo">
+                        <img src="img/slider/photo1.jpg" alt="photo">
+                    </div>
+                    <p>John Doe</p>
+                    <p> CoFounder / CEO</p>
+                </div>
+            </div>
+
+            <div class="reviews__slider__item">
+                <div class="slideText">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</strong>
+                    <p>
+                        Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tinciduntLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis
+                        molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.
+                    </p>
+                </div>
+                <div class="slidePhoto">
+                    <div class="slidePhoto__photo">
+                        <img src="img/slider/photo2.jpg" alt="photo">
+                    </div>
+                    <p>John Doe</p>
+                    <p> CoFounder / CEO</p>
+                </div>
+            </div>
+
+            <div class="reviews__slider__item">
+                <div class="slideText">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</strong>
+                    <p>
+                        Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt
+                    </p>
+                    <p>
+                        Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt
+                    </p>
+                </div>
+                <div class="slidePhoto">
+                    <div class="slidePhoto__photo">
+                        <img src="img/slider/photo3.jpg" alt="photo">
+                    </div>
+                    <p>John Doe</p>
+                    <p> CoFounder / CEO</p>
+                </div>
+            </div>
+
+            <a class="reviews__slider__prev" onclick="minusSlide()">&#10094;</a>
+            <a class="reviews__slider__next" onclick="plusSlide()">&#10095;</a>
+        </div>
+    </section>
+
+    <section class="statistics">
+        <div class="statistics__title">
+            <span></span>
+            <h2>Статистика</h2>
+            <span></span>
+        </div>
+        <div class="statistics__text">
+            <ul>
+                <li>1204<span>дней</span></li>
+                <li> 2<span>видов</span></li>
+                <li>2970о<span>особей</span></li>
+                <li>1204<span>поситителя</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="id_footer" class="footer">
+        <div class="footer__map">
+            <div id="mapid"></div>
+        </div>
+        <div class="footer__text">
+            <h2><span>К</span>онтакты</h2>
+            <form>
+                <input type="text" placeholder="Your name" pattern="^[a-zA-Z]+$">
+                <input type="text" placeholder="Mobile" pattern="[1-9]{12}">
+                <input type="text" placeholder="Email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                <textarea  name="text" placeholder="Your Message"></textarea>
+                <button>СВЯЗАТЬСЯ</button>
+            </form>
+            <div class="footer__text__info">
+                <h3>Location Map</h3>
+                <ul>
+                    <li>Address<span>Trans-Mara and Narok</span></li>
+                    <li>Phone<span>+91 12534 67890</span></li>
+                    <li>Email<span>firkho@firkho.com</span></li>
+                </ul>
+            </div>
+            <div class="footer__text__links">
+                <a href="#"><img src="img/links/face.png" alt="photo"></a>
+                <a href="#"><img src="img/links/linken.png" alt="photo"></a>
+                <a href="#"><img src="img/links/twit.png" alt="photo"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
