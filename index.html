@@ -21,7 +21,8 @@
     <script src="script/charts.js" defer></script>
     <script src="script/menu.js" defer></script>
     <script src="script/preloader.js" defer></script>
-</head>
+    <script src="script/scroll.js" defer></script>
+</head> 
 
 <body>
     <div id="preloader">
@@ -34,11 +35,11 @@
     <nav id="menu" class="close">
         <div class="menu">
             <ul>
-                <li><a href="#">Что я умею</a></li>
-                <li><a href="#">Подробнее</a></li>
-                <li><a href="#">Мои работы</a></li>
-                <li><a href="#">Как я делаю</a></li>
-                <li><a href="#">Предложения</a></li>
+                <li><a href="#canI">Что я умею</a></li>
+                <li><a href="#more">Подробнее</a></li>
+                <li><a href="#works">Мои работы</a></li>
+                <li><a href="#howIdo">Как я делаю</a></li>
+                <li><a href="#offers">Предложения</a></li>
             </ul>
 
             <span>alaront.work@gmail.com</span>
@@ -57,7 +58,7 @@
         </div>
     </header>
 
-    <section class="whatCan">
+    <section class="whatCan" id="canI">
         <h2>Что я умею?</h2>
         <div class="whatCan__main" data-aos="fade-up">
             <div class="whatCan__main-text">
@@ -93,7 +94,7 @@
         </div>
     </section>
 
-    <section class="charts">
+    <section class="charts" id="more">
         <h2>Подробнее</h2>
         <div class="charts__chart">
             <div class="chart__chart-canvas" data-aos="fade-up">
@@ -107,7 +108,7 @@
         </div>
     </section>
 
-    <section class="myWork">
+    <section class="myWork" id="works">
         <h2>Мои работы</h2>
         <div class="myWorks__examples" data-aos="fade-up">
             <div class="myWorks__examples-4">
@@ -125,7 +126,7 @@
         </div>
     </section>
 
-    <section class="process">
+    <section class="process" id="howIdo">
         <h2>Как я делаю</h2>
         <div class="process__main">
             <div class="process__main-number" data-aos="fade-up">
@@ -156,7 +157,7 @@
         </div>
     </section>
 
-    <section class="offer">
+    <section class="offer" id="offers">
         <h2>Что я могу предложить</h2>
         <div class="offer__main">
             <div class="offer__main__info">
