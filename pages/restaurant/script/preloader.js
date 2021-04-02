@@ -1,13 +1,9 @@
-window.onload = function(event){
-    
-
+window.onload = function(){
     let preloader = document.getElementById('preloader')
     
-    setTimeout(()=>{
-        preloader.classList.add('preloader_end')
-    }, 500)
+    preloader.classList.add('preloader_end')
 
     setTimeout(()=>{
         preloader.style.display = 'none'
-    }, 900)
+    }, 500)
 }

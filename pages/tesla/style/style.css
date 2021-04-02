@@ -814,7 +814,7 @@ footer .contacts .contacts_relation a:hover {
 }
 
 .preloader_end {
-  animation: animaPrelEnd 1s linear infinite;
+  animation: animaPrelEnd 0.5s linear infinite;
 }
 
 @keyframes animaPrelEnd {

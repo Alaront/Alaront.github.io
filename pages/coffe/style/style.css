@@ -1267,7 +1267,7 @@ nav ul a {
 }
 
 .preloader_end {
-  animation: animaPrelEnd 1s linear infinite;
+  animation: animaPrelEnd 0.5s linear infinite;
 }
 
 @keyframes animaPrelEnd {

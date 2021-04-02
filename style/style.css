@@ -614,7 +614,7 @@ nav a::selection{
 }
 
 .preloader_end{
-  animation: animaPrelEnd 0.5s linear infinite;
+  animation: animaPrelEnd 0.8s linear infinite;
 }
 
 @keyframes animaPrelEnd {

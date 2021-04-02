@@ -672,7 +672,7 @@ section .parallax .parallax__photo img {
 }
 
 .preloader_end{
-  animation: animaPrelEnd 2s linear infinite;
+  animation: animaPrelEnd 0.5s linear infinite;
 }
 
 @keyframes animaPrelEnd {
