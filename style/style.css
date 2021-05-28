@@ -5,7 +5,7 @@
 	font-weight: bold;
 	font-style: normal;
 }
-
+ 
 @font-face {
 	font-family: 'Comfortaa';
 	src: url('../fonts/Comfortaa-Bold.eot');
@@ -442,6 +442,10 @@ nav .button{
   flex-direction: column;
   justify-content:center;
   align-items: center;
+}
+
+nav .button:hover{
+  cursor: pointer;
 }
 
 nav .button span{
