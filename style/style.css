@@ -5,7 +5,7 @@
 	font-weight: bold;
 	font-style: normal;
 }
- 
+
 @font-face {
 	font-family: 'Comfortaa';
 	src: url('../fonts/Comfortaa-Bold.eot');
@@ -229,14 +229,18 @@ header .text .text__title-main::selection{
 }
 
 .myWork .myWorks__examples div:nth-child(2) {
-  background-image: url(../img/logo_restoran.png);
+  background-image: url(../img/logo_moto.png);
 }
 
 .myWork .myWorks__examples div:nth-child(3) {
-  background-image: url(../img/icon_coffe.png);
+  background-image: url(../img/logo_restoran.png);
 }
 
 .myWork .myWorks__examples div:nth-child(4) {
+  background-image: url(../img/icon_coffe.png);
+}
+
+.myWork .myWorks__examples div:nth-child(5) {
   background-image: url(../img/logo_tesla.png);
 }
 
