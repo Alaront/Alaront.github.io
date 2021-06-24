@@ -2,7 +2,7 @@ let ctx = document.getElementById('myChart1').getContext('2d');
 let myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Flex-box', 'Flex-grid', 'Блочная модель', 'Резиновая вёрстка', '<meta>', 'Кроссбраузерность'],
+        labels: ['Flex-box', 'Css-grid', 'Блочная модель', 'Резиновая вёрстка', '<meta>', 'Кроссбраузерность'],
         datasets: [{
             label: '# of Votes',
             data: [50, 5, 12, 20, 3, 10],
