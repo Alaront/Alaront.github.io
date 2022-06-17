@@ -32,8 +32,12 @@
 }
 
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
 }
 
 header {
@@ -415,33 +419,33 @@ footer .footerMain .footerMain__block p:nth-child(2){
   margin-top: 5%;
 }
 
-nav{
-  margin: 0%;
-  padding: 0%;
+nav {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   flex-direction: row;
   position: fixed;
   z-index: 1000;
-  top: 0%;
+  top: 0;
   transition: 0.8s ease-in-out;
 }
 
 .close{
-  left: -25%;
+  left: -270px;
 }
 
 .open{
-  left: 0%;
+  left: 0;
 }
 
-nav .button{
-  min-width: 80px;
-  max-height: 80px;
+.button{
+  width: 80px;
+  height: 80px;
   background-color: #000000;
   border-radius: 40px;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 20px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -483,24 +487,26 @@ nav .button span{
 }
 
 
-nav .menu{
+.menu{
   background-color: hsla(0, 2%, 12%, 0.973);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
-  padding-right: 35%;
+  width: 270px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-nav .menu ul{
+.menu ul{
   margin-left: 5%;
 }
 
-nav .menu ul li{
+.menu ul li{
   list-style-type: none;
   padding: 2%;
 }
 
-nav .menu ul li a{
+.menu li a{
   text-decoration: none;
   font-family: 'Roboto';
   font-size: 25px;
@@ -509,11 +515,11 @@ nav .menu ul li a{
   color: #d4d4d4;
 }
 
-nav .menu ul li a:hover{
+.menu ul li a:hover{
   color: #ffffff;
 }
 
-nav .menu span{
+.menu span{
   margin-top: 55%;
   font-family: Roboto;
   font-size: 20px;
@@ -521,12 +527,10 @@ nav .menu span{
   margin-left: 5%;
 }
 
-nav .menu span::selection{
+.menu span::selection{
   background-color: rgb(255, 255, 255);
   color: #000000;
 }
-
-
 
 ::-webkit-scrollbar {
   width: 10px; /* ширина для вертикального скролла */

@@ -1,26 +1,19 @@
 @media only screen and (max-width: 1224px) {
     .close {
-        left: -30%;
+        left: -270px;
     }
 
     .charts .charts__chart div {
         min-width: 40%;
-      }
+    }
 
 }
 
 @media only screen and (max-width: 1000px) {
-    .close {
-        left: -35%;
-    }
-
 
 }
 
 @media only screen and (max-width: 900px) {
-    nav .menu {
-        padding-right: 10%;
-    }
 
     header .text .text__title-1 {
         font-size: 30px;
@@ -46,9 +39,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    nav .menu {
-        padding-right: 15%;
-    }
 
     .whatCan h2, .charts h2, .myWork h2, .process h2, .offer h2 {
         font-size: 35px;
@@ -88,11 +78,11 @@
 
 @media only screen and (max-width: 650px) {
 
-    nav .menu ul li a {
+    .menu li a {
         font-size: 20px;
     }
 
-    nav .menu span {
+    .menu span {
         font-size: 15px;
         margin-left: 3%;
     }
@@ -107,21 +97,10 @@
 }
 
 @media only screen and (max-width: 550px) {
-    nav .menu {
-        padding-right: 20%;
-    }
 
-    nav .menu ul li a {
-        font-size: 15px;
-    }
-
-    nav .menu span {
-        font-size: 10px;
-        margin-left: 1%;
-    }
-
-    nav .button {
-        margin-left: 25%;
+    .menu span {
+        font-size: 20px;
+        margin-left: 2%;
     }
 
     header .text .text__title-1 {
@@ -150,6 +129,27 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .close {
+        left: -230px;
+    }
+
+    .menu {
+        width: 230px;
+    }
+
+    .menu span {
+        font-size: 18px;
+        margin-left: 2%;
+    }
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .button {
+        width: 70px;
+        height: 70px;
+    }
 
     header .text .text__title-1 {
         font-size: 20px;
@@ -229,8 +229,4 @@
       footer .footerMain .footerMain__block p {
         font-size: 15px;
       }
-
-      nav .menu {
-        padding-right: 3%;
-    }
 }
