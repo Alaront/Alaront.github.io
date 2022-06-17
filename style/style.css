@@ -89,13 +89,13 @@ header .text .text__title-main::selection{
   background-color: rgb(173, 173, 173);
 }
 
-.whatCan {
+.what-can {
   margin: 0%;
   padding: 3% 0%;
   width: 100%;
 }
 
-.whatCan h2 {
+.what-can h2 {
   text-align: right;
   margin-right: 5%;
   margin-bottom: 5%;
@@ -106,7 +106,7 @@ header .text .text__title-main::selection{
   color: #000000;
 }
 
-.whatCan .whatCan__main {
+.what-can__main {
   width: 85%;
   margin: 0 auto;
   padding: 0%;
@@ -116,18 +116,18 @@ header .text .text__title-main::selection{
   flex-direction: row;
 }
 
-.whatCan .whatCan__main .whatCan__main-text {
+.what-can__main-text {
   width: 20%;
   padding: 5% 2.5%;
   margin: 0%;
   border-right: 2px solid #000000;
 }
 
-.whatCan .whatCan__main .whatCan__main-text:last-child {
+.what-can__main-text:last-child {
   border-right: none;
 }
 
-.whatCan .whatCan__main .whatCan__main-text h3 {
+.what-can__main-text h3 {
   font-family: 'Roboto';
   font-size: 30px;
   line-height: 1.2;
@@ -137,12 +137,12 @@ header .text .text__title-main::selection{
   text-align: center;
 }
 
-.whatCan .whatCan__main .whatCan__main-text ul {
+.what-can__main-text ul {
   text-align: left;
   margin-top: 20%;
 }
 
-.whatCan .whatCan__main .whatCan__main-text li {
+.what-can__main-text li {
   list-style-type: none;
   font-family: 'Roboto';
   font-size: 24px;
@@ -168,7 +168,7 @@ header .text .text__title-main::selection{
   margin: 4% 8%;
 }
 
-.charts .charts__chart {
+.charts__chart {
   padding: 0%;
   margin: 0% auto;
   width: 90%;
@@ -177,11 +177,11 @@ header .text .text__title-main::selection{
   justify-content: space-between;
 }
 
-.charts .charts__chart div {
+.charts__chart div {
   width: 50%;
 }
 
-.charts .charts__chart div h3 {
+.charts__chart div h3 {
   font-family: 'Roboto';
   font-size: 30px;
   line-height: 1.2;
@@ -191,13 +191,13 @@ header .text .text__title-main::selection{
   text-align: center;
 }
 
-.myWork {
+.my-work {
   width: 100%;
   margin: 0%;
   padding: 3% 0%;
 }
 
-.myWork h2 {
+.my-work h2 {
   font-family: "Comfortaa";
   font-size: 48px;
   line-height: 1.2;
@@ -207,7 +207,7 @@ header .text .text__title-main::selection{
   margin: 4% 8%;
 }
 
-.myWork .myWorks__examples {
+.my-works__examples {
   width: 85%;
   margin: 0% auto;
   display: flex;
@@ -218,7 +218,7 @@ header .text .text__title-main::selection{
   column-gap: 25px;
 }
 
-.myWork .myWorks__examples div {
+.my-works__examples div {
   width: 300px;
   height: 300px;
   border: 4px solid #000000;
@@ -228,27 +228,27 @@ header .text .text__title-main::selection{
   background-repeat: no-repeat;
 }
 
-.myWork .myWorks__examples div:nth-child(1) {
+.my-works__examples div:nth-child(1) {
   background-image: url(../img/logoZoo.png);
 }
 
-.myWork .myWorks__examples div:nth-child(2) {
+.my-works__examples div:nth-child(2) {
   background-image: url(../img/logo_moto.png);
 }
 
-.myWork .myWorks__examples div:nth-child(3) {
+.my-works__examples div:nth-child(3) {
   background-image: url(../img/logo_restoran.png);
 }
 
-.myWork .myWorks__examples div:nth-child(4) {
+.my-works__examples div:nth-child(4) {
   background-image: url(../img/icon_coffe.png);
 }
 
-.myWork .myWorks__examples div:nth-child(5) {
+.my-works__examples div:nth-child(5) {
   background-image: url(../img/logo_tesla.png);
 }
 
-.myWork .myWorks__examples div a {
+.my-works__examples div a {
   display: none;
   align-items: center;
   justify-content: center;
@@ -263,7 +263,7 @@ header .text .text__title-main::selection{
   background-color: rgba(0, 0, 0, 0.363);
 }
 
-.myWork .myWorks__examples div:hover a {
+.my-works__examples div:hover a {
   display: flex;
 }
 
@@ -283,7 +283,7 @@ header .text .text__title-main::selection{
   margin: 4% 8%;
 }
 
-.process .process__main {
+.process__main {
   width: 90%;
   margin: 5% auto;
   padding: 0%;
@@ -293,18 +293,18 @@ header .text .text__title-main::selection{
   align-items: center;
 }
 
-.process .process__main div {
+.process__main div {
   width: 14%;
 }
 
-.process .process__main .process__main-number {
+.process__main-number {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.process .process__main .process__main-number span {
+.process__main-number span {
   width: 100px;
   height: 100px;
   border: 2px solid #000000;
@@ -319,13 +319,13 @@ header .text .text__title-main::selection{
   color: #000000;
 }
 
-.process .process__main .process__main-bord {
+.process__main-bord {
   border: 2px solid #000000;
   height: 0px;
   margin-bottom: 2%;
 }
 
-.process .process__main .process__main-number p {
+.process__main-number p {
   font-family: 'Roboto';
   font-size: 30px;
   line-height: 1.2;
@@ -349,7 +349,7 @@ header .text .text__title-main::selection{
   margin: 4% 8%;
 }
 
-.offer .offer__main {
+.offer__main {
   width: 85%;
   margin: 0% auto;
   display: flex;
@@ -360,11 +360,11 @@ header .text .text__title-main::selection{
   column-gap: 30px;
 }
 
-.offer .offer__main .offer__main__info {
+.offer__main__info {
   width: 30%;
 }
 
-.offer .offer__main .offer__main__info h3 {
+.offer__main__info h3 {
   font-family: 'Roboto';
   font-size: 30px;
   line-height: 1.2;
@@ -373,7 +373,7 @@ header .text .text__title-main::selection{
   text-align: center;
 }
 
-.offer .offer__main .offer__main__info ul {
+.offer__main__info ul {
   font-family: Roboto;
   font-size: 18px;
   line-height: 1.2;
@@ -382,7 +382,7 @@ header .text .text__title-main::selection{
   margin-top: 7%;
 }
 
-.offer .offer__main .offer__main__info ul li {
+.offer__main__info ul li {
   list-style-type: none;
   margin-top: 3%;
 }

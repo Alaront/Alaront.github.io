@@ -83,7 +83,7 @@
     color: #FFFFFF; } }
 
 @media only screen and (max-width: 900px) {
-  .offer .offer__items .offer__items__item .offer__items__item-but h3 {
+  .offer__items__item-but h3 {
     font-size: 20px; } }
 
 @media only screen and (max-width: 790px) {

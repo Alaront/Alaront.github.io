@@ -1,15 +1,12 @@
 @media only screen and (max-width: 1224px) {
+
     .close {
         left: -270px;
     }
 
-    .charts .charts__chart div {
+    .charts__chart div {
         min-width: 40%;
     }
-
-}
-
-@media only screen and (max-width: 1000px) {
 
 }
 
@@ -27,12 +24,12 @@
         font-size: 25px;
     }
 
-    .charts .charts__chart {
+    .charts__chart {
         flex-direction: column;
         margin: 0% auto;
       }
       
-      .charts .charts__chart div {
+      .charts__chart div {
         width: 90%;
         margin: 0% auto;
       }
@@ -40,38 +37,47 @@
 
 @media only screen and (max-width: 768px) {
 
-    .whatCan h2, .charts h2, .myWork h2, .process h2, .offer h2 {
+    .what-can__main {
+        flex-direction: column;
+    }
+
+    .what-can h2, .charts h2, .my-work h2, .process h2, .offer h2 {
         font-size: 35px;
     }
 
-    .whatCan .whatCan__main .whatCan__main-text h3 {
+    .what-can__main-text {
+        border: none;
+        width: 100%;
+    }
+
+    .what-can__main-text h3 {
         font-size: 25px;
       }
       
-      .whatCan .whatCan__main .whatCan__main-text li {
-        font-size: 20px;
+      .what-can__main-text li {
+        font-size: 30px;
       }
 
-      .process .process__main {
+      .process__main {
         width: 95%;
         margin: 0% auto;
         flex-direction: column;
       }
       
-      .process .process__main div {
+      .process__main div {
         width: 50%;
         margin-bottom: 3%;
       }
 
-      .process .process__main .process__main-bord {
+      .process__main-bord {
           display: none;
       }
 
-      .offer .offer__main {
+      .offer__main {
         width: 95%;
       }
       
-      .offer .offer__main .offer__main__info {
+      .offer__main__info {
         width: 40%;
       }
 }
@@ -87,11 +93,11 @@
         margin-left: 3%;
     }
 
-    .offer .offer__main .offer__main__info h3 {
+    .offer__main__info h3 {
         font-size: 25px;
       }
       
-      .offer .offer__main .offer__main__info ul {
+      .offer__main__info ul {
         font-size: 15px;
       }
 }
@@ -115,17 +121,26 @@
         font-size: 20px;
     }
 
-    .whatCan h2, .charts h2, .myWork h2, .process h2, .offer h2 {
+    .what-can h2, .charts h2, .my-work h2, .process h2, .offer h2 {
         font-size: 25px;
     }
 
-    .whatCan .whatCan__main .whatCan__main-text h3 {
+    .what-can__main-text h3 {
         font-size: 20px;
-      }
+    }
       
-      .whatCan .whatCan__main .whatCan__main-text li {
-        font-size: 15px;
-      }
+    .what-can__main-text li {
+       font-size: 25px;
+     }
+
+    .offer__main {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .offer__main__info {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -163,70 +178,72 @@
         font-size: 15px;
     }
 
-    .whatCan .whatCan__main {
+    .what-can__main {
         width: 95%;
         flex-direction: column;
     }
 
-    .whatCan .whatCan__main .whatCan__main-text {
+    .what-can__main-text {
         width: 90%;
         border-right: none;
-        margin: 0% auto;
+        margin: 0 auto;
       }
 
-      .whatCan .whatCan__main .whatCan__main-text h3 {
-        margin: 1% 0%;
+      .what-can__main-text h3 {
+        margin: 1% 0;
       }
       
-      .whatCan .whatCan__main .whatCan__main-text ul {
-        margin-top: 0%;
+      .what-can__main-text ul {
+        margin-top: 0;
       }
       
-      .whatCan .whatCan__main .whatCan__main-text li {
-        margin-top: 0%;
+      .what-can__main-text li {
+        margin-top: 0;
+        font-size: 18px;
       }
       
-      .charts .charts__chart {
-        margin: 0% auto;
+      .charts__chart {
+        margin: 0 auto;
         width: 100%;
       }
 
-      .charts .charts__chart div {
+      .charts__chart div {
         width: 100%;
       }
 
-      .myWork .myWorks__examples {
+      .my-works__examples {
         width: 90%;
         margin: 0% auto;
       }
 
       
-      .offer .offer__main .offer__main__info {
-        width: 50%;
+      .offer__main__info {
+        width: 100%;
       }
 
-      .offer .offer__main .offer__main__info h3 {
+     .offer__main__info h3 {
         font-weight: 100;
       }
       
-      .offer .offer__main .offer__main__info ul {
-        font-size: 13px;
+      .offer__main__info ul li{
+        font-size: 18px;
         font-weight: 400;
+        line-height: 22px;
       }
       
 }
 
 @media only screen and (max-width: 375px) {
-      .charts .charts__chart {
+      .charts__chart {
         margin: 0% auto;
         width: 100%;
       }
 
-      .charts .charts__chart div {
+      .charts__chart div {
         width: 100%;
       }
 
-      footer .footerMain .footerMain__block p {
+      .footerMain__block p {
         font-size: 15px;
       }
 }
