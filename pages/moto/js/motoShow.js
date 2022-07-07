@@ -1,6 +1,13 @@
 let current = 0;
-let sliderDo = (state) =>{
-    if(state === 1){
+let sliderStep = setInterval(() => sliderDo(0, false), 8000);
+
+function sliderDo(state, step) {
+    if(step) {
+        clearInterval(sliderStep);
+        sliderStep = setInterval(() => sliderDo(0, false), 8000);
+    }
+
+    if(state === 1) {
         current--;
     }else{
         current++;
@@ -8,7 +15,6 @@ let sliderDo = (state) =>{
 
     if(current === 3)current = 0;
     if(current === -1)current = 2;
-
 
     let sliderCounts = document.getElementsByClassName("sliderNumber");
     let sliderItems = document.getElementsByClassName("header__slider__item");
@@ -29,12 +35,7 @@ let sliderDo = (state) =>{
 
     sliderItems[current].classList.remove("noActive");
     sliderItems[current].classList.add("active");
-
-
 }
 
-
-document.getElementsByClassName('header__count-arrow')[0].addEventListener('click', () => sliderDo(1));
-document.getElementsByClassName('header__count-arrow')[1].addEventListener('click', () => sliderDo(0));
-
-setInterval(() => sliderDo(0), 8000)
+document.getElementsByClassName('header__count-arrow')[0].addEventListener('click', () => sliderDo(1, true));
+document.getElementsByClassName('header__count-arrow')[1].addEventListener('click', () => sliderDo(0, true));

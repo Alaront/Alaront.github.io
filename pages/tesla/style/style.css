@@ -307,7 +307,7 @@ figure .features {
   background-image: url(../img/sil.png);
   background-repeat: no-repeat;
   background-position: 50% 80%;
-  background-size: 40%;
+  background-size: contain;
   display: flex;
   justify-content: space-around;
   align-content: space-around;
@@ -421,7 +421,7 @@ figure .features .features__text:nth-child(4) h3::before {
 
 section .parallax {
   background-image: url(../img/for_parallax.jpg);
-  height: 50vh;
+  height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -440,10 +440,10 @@ section .parallax:hover {
 }
 
 section .parallax h2 {
-  font-family: Bebas;
   z-index: 99;
   text-transform: uppercase;
   font-size: 120px;
+  line-height: 400px;
   font-weight: 700;
   color: #ffffff;
   margin: 0%;
@@ -451,7 +451,6 @@ section .parallax h2 {
   text-align: center;
   transition: 0.9s all;
   width: 40%;
-  height: 40%;
 }
 
 section .parallax .parallax__line1 {

@@ -29,7 +29,6 @@
     section .parallax h2 {
         font-size: 100px;
         width: 80%;
-        height: 50%;
     }
 
     section .parallax .parallax__line1 {
@@ -43,8 +42,6 @@
     }
 
     section .parallax .parallax__line2 {
-        bottom: 35%;
-        right: 0;
         width: 80%;
         height: 60%;
     }
@@ -193,7 +190,6 @@
     section .parallax h2 {
         font-size: 50px;
         width: 80%;
-        height: 50%;
     }
 }
 

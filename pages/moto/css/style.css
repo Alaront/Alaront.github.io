@@ -360,7 +360,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.offer .offer__items .offer__items__item {
+.offer .offer__items .offer__items--item {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -368,12 +368,12 @@ body {
   justify-content: space-between;
 }
 
-.offer .offer__items .offer__items__item .offer__items__item-info img {
+.offer .offer__items .offer__items--item .offer__items--item-info img {
   width: 100%;
   object-fit: cover;
 }
 
-.offer .offer__items .offer__items__item .offer__items__item-but h3 {
+.offer .offer__items .offer__items--item .offer__items--item-but h3 {
   margin-top: 10%;
   font-family: Roboto;
   font-style: normal;
@@ -385,7 +385,7 @@ body {
   color: #FFFFFF;
 }
 
-.offer .offer__items .offer__items__item .offer__items__item-but p {
+.offer .offer__items .offer__items--item .offer__items--item-but p {
   font-family: Times New Roman;
   font-style: normal;
   font-weight: 100;
@@ -396,7 +396,7 @@ body {
   color: #FFFFFF;
 }
 
-.offer .offer__items .offer__items__item .offer__items__item-but button {
+.offer .offer__items .offer__items--item .offer__items--item-but button {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -414,7 +414,7 @@ body {
   transition: 0.5s all;
 }
 
-.offer .offer__items .offer__items__item .offer__items__item-but button:hover {
+.offer .offer__items .offer__items--item .offer__items--item-but button:hover {
   cursor: pointer;
   border-color: #022397;
 }
