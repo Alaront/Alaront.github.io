@@ -56,27 +56,30 @@ header .text {
   color: #d2d2d0;
 }
 
-header .text .text__title-1 {
+.text__title-1 {
   margin: 0%;
   padding: 0%;
   font-family: 'Bebas-Neue';
   font-size: 40px;
+  line-height: 59px;
 }
 
-header .text .text__title-main {
+.text__title-main {
   margin: 0%;
   padding: 0%;
   font-family: 'Bebas-Neue';
   font-size: 105px;
+  line-height: 100px;
   text-transform: uppercase;
 }
 
-header .text .text__title-2 {
+.text__title-2 {
   margin: 0%;
   padding: 0%;
   font-family: 'Bebas-Neue';
   font-size: 35px;
   text-transform: uppercase;
+  line-height: 35px;
 }
 
 header .text .text__title-1::selection, header .text .text__title-2::selection{
@@ -118,7 +121,7 @@ header .text .text__title-main::selection{
 
 .what-can__main-text {
   width: 20%;
-  padding: 5% 2.5%;
+  padding: 20px 30px;
   margin: 0%;
   border-right: 2px solid #000000;
 }
@@ -133,13 +136,12 @@ header .text .text__title-main::selection{
   line-height: 1.2;
   font-weight: 400;
   color: #000000;
-  margin: 3% 0%;
+  margin: 0 0 30px 0;
   text-align: center;
 }
 
 .what-can__main-text ul {
   text-align: left;
-  margin-top: 20%;
 }
 
 .what-can__main-text li {
@@ -149,7 +151,7 @@ header .text .text__title-main::selection{
   line-height: 1.2;
   font-weight: 300;
   color: #000000;
-  margin-top: 5%;
+  margin-bottom: 15px;
 }
 
 .charts {
