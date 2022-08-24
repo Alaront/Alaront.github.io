@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @media only screen and (max-width: 809px) {
     .main_h {
         padding-top: 25px;
@@ -235,7 +237,7 @@
     }
 
     .pop-up__piece .pop-up__piece_block .pop-up__piece_text button {
-        font-family: Calibri;
+        font-family: Raleway;
         font-size: 18px;
         line-height: 1.2;
         font-weight: 400;
@@ -250,7 +252,7 @@
     }
 
     .pop-up__wholesale .pop-up__wholesale_block .pop-up__wholesale_text button {
-        font-family: Calibri;
+        font-family: Raleway;
         font-size: 18px;
         line-height: 1.2;
         font-weight: 400;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   background-color: #635144;
   overflow-x: hidden;
@@ -77,7 +79,7 @@ nav ul li {
 @media only screen and (max-width: 809px) {}
 
 nav ul a {
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 25px;
   line-height: 1.2;
   font-weight: 400;
@@ -137,7 +139,7 @@ nav ul a {
 }
 
 .hero h1 {
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 60px;
   line-height: 1.2;
   font-weight: 400;
@@ -198,7 +200,7 @@ nav ul a {
 }
 
 .acquaintance .acquaintance__text .acquaintance__text_article p {
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
@@ -212,7 +214,7 @@ nav ul a {
 }
 
 .acquaintance .acquaintance__text .acquaintance__text_sign h2 {
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 30.2px;
   line-height: 1.2;
   font-weight: 300;
@@ -254,7 +256,7 @@ nav ul a {
   justify-content: space-around;
   align-items: center;
 
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 35.9px;
   line-height: 39px;
   font-weight: 700;
@@ -321,7 +323,7 @@ nav ul a {
 .product .product___block_text p {
   margin: 0%;
   padding: 0%;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 20px;
   line-height: 1.2;
   color: #dfdfdf;
@@ -355,7 +357,7 @@ nav ul a {
 
 .sales .sales__text .sales__text_heading h2 {
   margin: 0%;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 35.9px;
   line-height: 39px;
   font-weight: 700;
@@ -383,7 +385,7 @@ nav ul a {
 
 .sales .sales__text .sales__text_article p {
   margin: 0%;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
@@ -423,7 +425,7 @@ nav ul a {
 
 .order .order__text_heading h2 {
   margin: 0%;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 35.9px;
   line-height: 39px;
   font-weight: 700;
@@ -452,7 +454,7 @@ nav ul a {
 .order .order__text_article p {
   text-align: center;
   margin: 0%;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 28px;
   line-height: 1.2;
   font-weight: 400;
@@ -675,7 +677,7 @@ nav ul a {
 
 .order .order__text_price .order__text_price_1 ul li,
 .order .order__text_price .order__text_price_2 ul li {
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 23px;
   line-height: 48px;
   font-weight: 400;
@@ -694,7 +696,7 @@ nav ul a {
   letter-spacing: 0.05em;
   margin: 8% 0% 8% 0%;
   text-align: center;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 24.1px;
   line-height: 48px;
   font-weight: 400;
@@ -724,7 +726,7 @@ nav ul a {
 
 .reviews .reviews__heading h2 {
   margin: 0%;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 35.9px;
   line-height: 39px;
   font-weight: 700;
@@ -960,7 +962,7 @@ nav ul a {
   width: 50%;
   border: none;
   text-align: start;
-  font-family: 'Calibri';
+  font-family: 'Raleway';
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
@@ -1065,7 +1067,7 @@ nav ul a {
   width: 50%;
   border: none;
   text-align: start;
-  font-family: 'Calibri';
+  font-family: 'Raleway';
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
@@ -1217,7 +1219,7 @@ nav ul a {
 
 .pop-up__attention p {
   padding: 2%;
-  font-family: Calibri;
+  font-family: Raleway;
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
@@ -1232,7 +1234,7 @@ nav ul a {
   padding: 1% 0%;
   color: #ffffff;
   background-color: #35271d;
-  font-family: 'Calibri';
+  font-family: 'Raleway';
   border: none;
 }
 
