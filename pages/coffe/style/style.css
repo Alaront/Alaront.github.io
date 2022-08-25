@@ -48,7 +48,7 @@ nav {
 }
 
 .logo img {
-  width: 70%;
+  width: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -64,8 +64,6 @@ nav ul {
   text-align: center;
   max-height: 50%;
   padding-right: 2%;
-  transition: all 5s;
-  transition: all 53s;
 }
 
 @media only screen and (max-width: 809px) {}
@@ -80,8 +78,8 @@ nav ul li {
 
 nav ul a {
   font-family: Raleway;
-  font-size: 25px;
-  line-height: 1.2;
+  font-size: 26px;
+  line-height: 32px;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
@@ -141,7 +139,7 @@ nav ul a {
 .hero h1 {
   font-family: Raleway;
   font-size: 60px;
-  line-height: 1.2;
+  line-height: 70px;
   font-weight: 400;
   color: #dfdfdf;
 }
@@ -162,11 +160,11 @@ nav ul a {
 
 .acquaintance .acquaintance__text {
   width: 35%;
-  padding: 3%;
+  padding: 40px;
   background-color: #443731;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
@@ -186,7 +184,7 @@ nav ul a {
   flex-direction: row;
   font-family: TimesNewPSMT;
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 37px;
   font-weight: 400;
   color: #dfdfdf;
   margin: 2%;
@@ -202,7 +200,7 @@ nav ul a {
 .acquaintance .acquaintance__text .acquaintance__text_article p {
   font-family: Raleway;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 28px;
   font-weight: 400;
   color: #dfdfdf;
 }
@@ -216,7 +214,7 @@ nav ul a {
 .acquaintance .acquaintance__text .acquaintance__text_sign h2 {
   font-family: Raleway;
   font-size: 30.2px;
-  line-height: 1.2;
+  line-height: 38px;
   font-weight: 300;
   font-style: italic;
   color: #dfdfdf;
@@ -258,7 +256,7 @@ nav ul a {
 
   font-family: Raleway;
   font-size: 35.9px;
-  line-height: 39px;
+  line-height: 42px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -313,8 +311,7 @@ nav ul a {
   padding: 0%;
   font-family: 'Times New Roman', Times, serif;
   font-size: 28px;
-  line-height: 1.2;
-  font-weight: normal;
+  line-height: 35px;
   letter-spacing: 0.1em;
   color: #ffffff;
   font-weight: bold;
@@ -325,7 +322,7 @@ nav ul a {
   padding: 0%;
   font-family: Raleway;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 26px;
   color: #dfdfdf;
 }
 
@@ -359,7 +356,7 @@ nav ul a {
   margin: 0%;
   font-family: Raleway;
   font-size: 35.9px;
-  line-height: 39px;
+  line-height: 42px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -387,7 +384,7 @@ nav ul a {
   margin: 0%;
   font-family: Raleway;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 31px;
   font-weight: 400;
   color: #ffffff;
   display: flex;
@@ -399,7 +396,7 @@ nav ul a {
 .sales .sales__text .sales__text_article p em {
   font-family: TimesNewPSMT;
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 38px;
   font-weight: 400;
   color: #ffffff;
   padding-top: 5%;
@@ -445,8 +442,7 @@ nav ul a {
 }
 
 .order .order__text_article {
-  margin: 0% auto;
-  padding: 0%;
+  margin: 0 auto;
   width: 80%;
   padding: 4%;
 }
@@ -456,7 +452,7 @@ nav ul a {
   margin: 0%;
   font-family: Raleway;
   font-size: 28px;
-  line-height: 1.2;
+  line-height: 35px;
   font-weight: 400;
   color: #ffffff;
   display: flex;
@@ -659,11 +655,11 @@ nav ul a {
 .order .order__text_price .order__text_price_2 h3 {
   font-family: TimesNewPSMT;
   font-size: 48.4px;
-  line-height: 1.2;
+  line-height: 50px;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #ffffff;
-  margin: 7% 0% 7% 0%;
+  margin: 7% 0 7% 0;
   text-align: center;
 }
 
@@ -692,9 +688,8 @@ nav ul a {
   background-color: #563e31;
   width: 50%;
   display: block;
-  margin-left: 25%;
   letter-spacing: 0.05em;
-  margin: 8% 0% 8% 0%;
+  margin: 8% 0 8% 0;
   text-align: center;
   font-family: Raleway;
   font-size: 24.1px;
@@ -728,7 +723,7 @@ nav ul a {
   margin: 0%;
   font-family: Raleway;
   font-size: 35.9px;
-  line-height: 39px;
+  line-height: 42px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -906,7 +901,7 @@ nav ul a {
 
 .pop-up__piece .pop-up__piece_block .pop-up__piece_scrin {
   width: 100%;
-  min-height: 50vh;
+  height: 450px;
   display: flex;
   flex-direction: row;
 }
@@ -1005,7 +1000,7 @@ nav ul a {
 
 .pop-up__wholesale .pop-up__wholesale_block .pop-up__wholesale_scrin {
   width: 100%;
-  min-height: 50vh;
+  height: 350px;
   display: flex;
   flex-direction: column;
   background-color: #463c37;
@@ -1122,6 +1117,8 @@ nav ul a {
   margin-top: 2%;
   font-size: 18px;
   font-family: Arial;
+  border-radius: 3px;
+  border: none;
 }
 
 .pop-up__piece .pop-up__piece_block .pop-up__piece_scrin .pop-up__piece_scrin_form p {
@@ -1135,7 +1132,7 @@ nav ul a {
 }
 
 .pop-up__piece .pop-up__piece_block .pop-up__piece_scrin .pop-up__piece_scrin_form p label {
-  width: 30%;
+  width: 90px;
   cursor: pointer;
   position: relative;
   margin: 1% 0;
@@ -1301,7 +1298,7 @@ nav ul a {
   padding: 2% 5%;
   height: 100%;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 23px;
   font-weight: 200;
   color: #000000;
   text-decoration: none;
