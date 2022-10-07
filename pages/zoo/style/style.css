@@ -235,8 +235,8 @@
   cursor: pointer;
 }
 
-.gallery .gallery__menu ul .active {
-  font-size: 24px;
+.gallery__menu ul .active {
+  font-size: 12px;
   font-weight: 400;
   border-bottom: 1px solid #ffc600;
   text-align: center;
@@ -555,9 +555,8 @@
 
 .reviews {
   width: 100%;
-  height: 100vh;
   margin: 0%;
-  padding: 0%;
+  padding: 0 0 4% 0;
   background-color: #000000;
 }
 
@@ -584,8 +583,7 @@
 .reviews .reviews__slider {
   width: 80%;
   position: relative;
-  margin: 5% auto 0% auto;
-  position: relative;
+  margin: 0 auto 0 auto;
 }
 
 .reviews .reviews__slider .reviews__slider__item {
@@ -777,6 +775,7 @@
   margin: 0%;
   padding: 3%;
   background-color: #2046b3;
+  box-sizing: border-box;
 }
 
 .footer .footer__text h2 {
