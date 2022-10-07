@@ -22,6 +22,7 @@ body {
 .nav img {
   width: 10%;
   margin: 1% 1% 1% 10%;
+  max-width: 67px;
 }
 
 .nav img:hover {
@@ -73,6 +74,7 @@ body {
 }
 
 .header {
+  min-height: 700px ;
   height: 100vh;
   box-sizing: border-box;
   padding: 5% 5% 0 5%;

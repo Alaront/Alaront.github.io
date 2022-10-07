@@ -28,7 +28,7 @@
 
     section .parallax h2 {
         font-size: 100px;
-        width: 80%;
+        width: 100%;
     }
 
     section .parallax .parallax__line1 {
@@ -111,6 +111,16 @@
     footer .contacts .contacts_relation {
         width: 45%;
     }
+
+    section .container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .container img{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -174,6 +184,10 @@
         width: 90%;
     }
 
+    section .parallax h2 {
+        font-size: 80px;
+    }
+
 
 }
 
@@ -212,12 +226,12 @@
 
     figure .features {
         flex-direction: column;
-        background-size: 70%;
+        background-size: contain;
         background-position: 90% 30%;
     }
 
     figure .features .features__text {
-        width: 80%;
+        width: 100%;
         min-height: 100px;
     }
 
@@ -302,5 +316,9 @@
     footer .contacts .contacts_company,
     footer .contacts .contacts_relation {
         width: 60%;
+    }
+
+    section .parallax h2 {
+        font-size: 50px;
     }
 }

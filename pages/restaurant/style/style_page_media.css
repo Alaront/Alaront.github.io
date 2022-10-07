@@ -17,6 +17,10 @@
     main .text .text__main p {
         font-size: 18px;
     }
+
+    main .photo {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 650px) {

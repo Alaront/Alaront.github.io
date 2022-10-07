@@ -1,8 +1,16 @@
 @media only screen and (max-width: 1224px) {
   .header {
-    height: 50vh; }
+    height: 50vh;
+    min-height: 600px;
+  }
   .article {
     margin-top: 5%; } }
+
+@media only screen and (max-width: 1045px) {
+  .header {
+    min-height: 520px;
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .nav {

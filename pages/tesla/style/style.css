@@ -27,7 +27,7 @@ body {
 }
 
 .menu .menu__links {
-  width: 93%;
+  width: calc(100% - 95px)
 }
 
 .menu .menu__links .menu__block .block__circle {
@@ -104,12 +104,12 @@ body {
 }
 
 .menu_logo {
-  width: 7%;
+  width: 95px;
 }
 
 .menu_logo img {
   margin: 5% 0%;
-  width: 95px;
+  width: 100%;
   object-fit: contain;
 }
 
