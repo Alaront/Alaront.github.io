@@ -1,0 +1,26 @@
+section.section-about(id="about")
+    .section-about__wrapper
+        .section-about__title-wrapper.title-animation
+            h2.section-about__title.title-close.js-title-about-animation ABOUT THE GAME
+        .section-about__wrapper-info
+            .section-about__video
+                img(src="img/video-bg.png" alt="video")
+                svg.js-section-about-video-play(width="172" height="172" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    g(clip-path="url(#clip0_1017_30)")
+                        path(d="M86 6.88C42.3416 6.88 6.88 42.3416 6.88 86C6.88 129.658 42.3416 165.12 86 165.12C129.658 165.12 165.12 129.658 165.12 86C165.12 42.3416 129.658 6.88 86 6.88V6.88ZM86 13.76C125.936 13.76 158.24 46.0638 158.24 86C158.24 125.936 125.936 158.24 86 158.24C46.0638 158.24 13.76 125.936 13.76 86C13.76 46.0638 46.0638 13.76 86 13.76V13.76ZM61.7722 44.8409C60.8584 44.8544 59.985 45.2172 59.34 45.8622C58.695 46.5072 58.3322 47.3806 58.3322 48.3078V48.375C58.3322 48.3885 58.3322 48.3885 58.3322 48.4019L58.6278 123.961C58.6278 125.197 59.2863 126.339 60.3613 126.944C61.4228 127.562 62.7397 127.549 63.8013 126.931L129.013 88.8488C130.075 88.2306 130.733 87.0884 130.72 85.8656C130.72 84.6294 130.062 83.5006 129 82.8825L63.4922 45.3113C62.9681 45.0156 62.3769 44.8544 61.7722 44.8409H61.7722ZM65.2391 54.2472L120.4 85.9059L65.4809 117.981L65.2391 54.2472Z" fill="#FF0042")
+                    defs
+                        clipPath(id="clip0_1017_30")
+                            rect(width="172" height="172" fill="white")
+            .section-about__text-wrapper
+                p.section-about__text
+                    | Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one
+                    | life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush. Blend your style
+                    | and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster
+                    | than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
+            ul.section-about__info
+                li PLAYERS
+                li ROUNDS
+                li AGENTS
+                li MAPS
+        - let title = 'ABOUT'
+        include ../linedecor/linedecor.pug

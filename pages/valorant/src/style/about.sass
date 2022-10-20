@@ -1,0 +1,268 @@
+@import "config"
+
+.section-about
+  background: url("./img/about-bg.png") center center no-repeat
+  background-size: cover
+  overflow: hidden
+
+.section-about__wrapper
+  padding: 60px 10px 10px 10px
+  position: relative
+
+  +min-w($tablet)
+    padding: 60px 100px 0 100px
+
+  +min-w($desktop)
+    max-width: 1920px
+    padding: 60px 40px 0 40px
+    margin: 0 auto
+
+  +min-w($desktop_full_plus)
+    padding: 60px 140px 100px 140px
+    overflow: hidden
+
+.section-about__wrapper-info
+  +min-w($desktop)
+    display: flex
+    flex-wrap: wrap
+
+.section-about__title
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 700
+  font-size: 24px
+  line-height: 30px
+  color: $default_black
+  text-align: center
+  margin-bottom: 250px
+  position: relative
+  z-index: 2
+
+  +min-w($tablet)
+    font-size: 51px
+    line-height: 60px
+    margin-bottom: 304px
+
+  +min-w($desktop)
+    font-size: 67px
+    line-height: 80px
+    margin-bottom: 34px
+
+  +min-w($desktop_full_plus)
+    margin-bottom: 54px
+    text-align: left
+    padding-left: 95px
+
+.section-about__title-wrapper
+  position: relative
+
+  &:before
+    content: "ABOUT THE GAME"
+    position: absolute
+    font-family: 'Source Sans Pro', sans-serif
+    top: -12px
+    left: 50%
+    transform: translateX(-50%)
+    font-weight: 600
+    font-size: 37px
+    line-height: 60px
+    color: rgba(236,232,225,.1)
+    width: 100%
+    max-width: max-content
+
+    +min-w($tablet)
+      font-size: 73px
+      line-height: 60px
+      top: 3px
+
+    +min-w($desktop)
+      font-size: 91px
+      line-height: 99px
+
+    +min-w($desktop_full_plus)
+      font-size: 106px
+      line-height: 120px
+      top: -20px
+      left: 25%
+
+.section-about__text-wrapper
+  margin-bottom: 43px
+
+  +min-w($desktop)
+    order: -1
+    width: 100%
+    margin-bottom: 100px
+
+  +min-w($desktop_full_plus)
+    margin-bottom: 150px
+
+.section-about__text
+  font-family: 'Source Sans Pro', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 13px
+  line-height: 18px
+  color: $default_color_text
+
+  +min-w($tablet)
+    font-size: 18px
+    line-height: 20px
+
+  +min-w($desktop)
+    font-size: 20px
+    line-height: 26px
+    max-width: 640px
+
+  +min-w($desktop_full_plus)
+    max-width: 800px
+
+.section-about__info
+
+  +min-w($desktop)
+    order: -1
+    width: 30%
+
+  li
+    font-family: 'Source Sans Pro', sans-serif
+    font-weight: 700
+    font-size: 24px
+    line-height: 30px
+    text-align: center
+    margin-bottom: 47px
+    position: relative
+    z-index: 2
+
+    +min-w($tablet)
+      font-size: 36px
+      line-height: 45px
+
+    &:after
+      content: '5'
+      position: absolute
+      font-family: 'Source Sans Pro', sans-serif
+      font-weight: 700
+      font-size: 64px
+      line-height: 80px
+      text-align: center
+      color: rgba(255, 255, 255, 0)
+      -webkit-text-stroke-width: 1px
+      -webkit-text-stroke-color: $default_color_text
+      top: -24px
+      left: 50%
+      transform: translateX(-50%)
+      z-index: -1
+
+      +min-w($tablet)
+        font-size: 75px
+        line-height: 87px
+
+      +min-w($desktop)
+        font-size: 90px
+        line-height: 97px
+
+
+    &:nth-child(1)
+      &:after
+        content: "5"
+
+    &:nth-child(2)
+      &:after
+        content: "13"
+
+    &:nth-child(3)
+      &:after
+        content: "16"
+
+    &:nth-child(4)
+      &:after
+        content: "4"
+
+.section-about__video
+  position: relative
+  max-width: 540px
+  margin: 0 auto 42px auto
+
+  +min-w($desktop)
+    max-width: 724px
+
+  &:after
+    content: ""
+    position: absolute
+    top: -225px
+    left: 50%
+    width: 228px
+    height: 346px
+    background: url(./img/video-person.png) 0 0 no-repeat
+    background-size: contain
+    transform: translateX(-114px)
+    z-index: 1
+
+    +min-w($tablet)
+      top: -303px
+      left: 50%
+      width: 290px
+      height: 436px
+
+    +min-w($desktop)
+      top: -375px
+      left: 50%
+      width: 310px
+      height: 494px
+
+    +min-w($desktop_full_plus)
+      top: -409px
+      left: 50%
+      width: 387px
+      height: 588px
+
+  &:before
+    content: 'VIDEO'
+    font-family: 'Source Sans Pro', sans-serif
+    font-weight: 600
+    font-size: 55px
+    line-height: 63px
+    color: rgba(255, 255, 255, 0.15)
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 4
+    position: absolute
+
+
+    +min-w($tablet)
+      font-size: 100px
+
+  img
+    width: 100%
+    display: block
+    position: relative
+    z-index: 2
+
+  svg
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 4
+    width: 90px
+    height: 90px
+    cursor: pointer
+
+    path
+      transition: 0.3s
+
+    &:hover
+      path
+        fill: #bb0000
+
+.popup-about-wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+  iframe
+    width: 90%
+    height: calc(90% - 50px)
+    margin-top: 50px
+
