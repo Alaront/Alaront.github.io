@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        include layouts/head-meta
+        link(rel='icon' href='./img/logo.ico' type='image/x-icon')
+        link(rel="stylesheet" href=`style/style.css`)
+    body
+        include layouts/nav/nav.pug
+        include layouts/header/header.pug
+        include layouts/main/main.pug
+        include layouts/about/about.pug
+        include layouts/agents/agents.pug
+        include layouts/maps/maps.pug
+        include layouts/guns/guns.pug
+        include layouts/footer/footer.pug
+
+        include layouts/popups/about-popup.pug
+
+        script(src='scripts/main.js' defer)
+        script(src='scripts/mainOther.js' defer)

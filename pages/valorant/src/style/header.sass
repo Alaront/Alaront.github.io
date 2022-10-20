@@ -1,0 +1,574 @@
+@import "config"
+@import "headerSlider"
+
+.header
+  min-height: 100vh
+  background: url("./img/background-header.png") center center no-repeat fixed, $default_red
+  background-size: cover
+  padding: 20px 0 20px 0
+
+  h2
+    font-family: 'Kanit', sans-serif
+    font-style: italic
+    font-weight: 500
+    font-size: 70px
+    line-height: 80px
+    text-align: center
+    letter-spacing: 3px
+    -webkit-text-stroke-width: 1px
+    -webkit-text-stroke-color: rgb(255, 255, 255)
+    color: rgba(255, 255, 255, 0)
+    position: relative
+    margin-bottom: 50px
+
+    +min-w($tablet)
+      font-size: 121px
+      line-height: 133px
+
+    +min-w($desktop_full_plus)
+      transform-origin: 0 0
+      transform: rotate(90deg)
+      margin-left: 200px
+      position: absolute
+      top: 22px
+      left: 0
+      font-size: 105px
+      line-height: 117px
+      min-width: 450px
+      text-align: left
+
+    &:before
+      content: ''
+      width: 100px
+      height: 5px
+      position: absolute
+      top: -8px
+      right: 20px
+      background: #1F2326
+      opacity: 0.5
+
+      +min-w($desktop_full_plus)
+        width: 128px
+        top: auto
+        bottom: 61px
+        right: -166px
+        transform-origin: 0 0
+        transform: rotate(90deg)
+        margin-left: 200px
+
+
+    &:after
+      content: ''
+      background: url("./img/agents-logo.svg") center center no-repeat
+      background-size: contain
+      width: 36px
+      height: 39px
+      position: absolute
+      bottom: -40px
+      left: 19px
+
+      +min-w($desktop_full_plus)
+        transform-origin: 0 0
+        transform: rotate(270deg)
+        width: 50px
+        height: 99px
+        left: auto
+        right: 21px
+        bottom: -163px
+
+
+.header__wrapper
+
+  +min-w($desktop)
+    position: relative
+    max-width: 1920px
+    margin: 0 auto
+
+
+.header__agents
+  display: flex
+  align-items: center
+  flex-direction: column
+
+  +min-w($mob_start)
+    padding-left: 30px
+    padding-right: 23px
+    margin-bottom: 20px
+
+  +min-w($desktop)
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-bottom: 65px
+    padding-left: 0
+    overflow: visible
+
+  +min-w($desktop_full_plus)
+    margin-left: 300px
+    width: calc(100% - 300px)
+    padding: 0 18px 0 0
+
+.header__agents-wrapper
+
+  +min-w($desktop)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+
+  +min-w($desktop_full_plus)
+    gap: 30px
+
+.header__agent-item
+  width: 320px
+  height: 606px
+  margin-bottom: 20px
+  position: relative
+  transition: 0.5s
+
+  +min-w($desktop)
+    margin-bottom: 0
+    width: 21%
+    height: 555px
+
+  +min-w($desktop_full)
+    margin-bottom: 0
+    width: 320px
+    height: 606px
+
+.header__agent-item-phoenix
+  background: url(img/phoenix.png) 0 0 no-repeat
+  background-size: cover
+
+  &.header__agent-item--active
+    background: url(img/phoenix-white.png) 0 0 no-repeat
+    background-size: cover
+
+.header__agent-item-jett
+  background: url(img/jett.png) 0 0 no-repeat
+  background-size: cover
+
+  &.header__agent-item--active
+    background: url(img/jett-white.png) 0 0 no-repeat
+    background-size: cover
+
+.header__agent-item-sova
+  background: url(img/sova.png) 0 0 no-repeat
+  background-size: cover
+
+  &.header__agent-item--active
+    background: url(img/sova-white.png) 0 0 no-repeat
+    background-size: cover
+
+.header__agent-item-sage
+  background: url(img/sage.png) 0 0 no-repeat
+  background-size: cover
+
+  &.header__agent-item--active
+    background: url(img/sage-white.png) 0 0 no-repeat
+    background-size: cover
+
+.header__agent-name
+  font-family: 'Kanit', sans-serif
+  font-size: 40px
+  line-height: 51px
+  letter-spacing: 3px
+  -webkit-text-stroke-width: 1px
+  -webkit-text-stroke-color: rgb(255, 255, 255)
+  color: rgba(255, 255, 255, 0)
+  position: absolute
+  top: 15px
+  left: 45px
+  transform-origin: 0 0
+  transform: rotate(90deg)
+
+  .header__agent-item--active &
+    -webkit-text-stroke-color: #1F2326
+
+  +min-w($mob_start)
+    left: 30px
+    font-size: 60px
+    line-height: 50px
+    overflow: hidden
+
+.header__agent-country
+  font-family: 'Kanit', sans-serif
+  font-weight: 400
+  font-size: 25px
+  line-height: 28px
+  color: $default_red
+  position: absolute
+  top: 15px
+  left: 60px
+  transform-origin: 0 0
+  transform: rotate(90deg)
+
+.header__agent-skills
+  background: #1F2326
+  border: 2px solid $default_white
+  width: 100%
+  position: absolute
+  bottom: 0
+  left: 0
+  padding: 10px 18px
+  display: flex
+  justify-content: space-between
+  transition: 0.5s
+
+  .header__agent-item--active &
+    background: #FFFFFF
+    border-color: #1F2326
+
+  +min-w($mob_start)
+    bottom: -18px
+    left: 15px
+
+  span
+    display: block
+    width: 40px
+    height: 55px
+
+  .header__agent-item-phoenix &
+    span
+      &:nth-child(1)
+        background: url("img/phoenix-skills-one.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/phoenix-skills-two.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/phoenix-skills-three.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/phoenix-skills-four.svg") center center no-repeat
+        background-size: contain
+
+  .header__agent-item-jett &
+    span
+      &:nth-child(1)
+        background: url("img/jett-skills-one.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/jett-skills-two.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/jett-skills-three.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/jett-skills-four.svg") center center no-repeat
+        background-size: contain
+
+  .header__agent-item-sova &
+    span
+      &:nth-child(1)
+        background: url("img/sova-skills-one.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/sova-skills-two.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/sova-skills-three.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/sova-skills-four.svg") center center no-repeat
+        background-size: contain
+
+  .header__agent-item-sage &
+    span
+      &:nth-child(1)
+        background: url("img/sage-skills-one.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/sage-skills-two.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/sage-skills-three.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/sage-skills-four.svg") center center no-repeat
+        background-size: contain
+
+  .header__agent-item-phoenix.header__agent-item--active &
+    span
+      &:nth-child(1)
+        background: url("img/phoenix-skills-one-black.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/phoenix-skills-two-black.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/phoenix-skills-three-black.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/phoenix-skills-four-black.svg") center center no-repeat
+        background-size: contain
+
+  .header__agent-item-jett.header__agent-item--active &
+    span
+      &:nth-child(1)
+        background: url("img/jett-skills-one-black.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/jett-skills-two-black.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/jett-skills-three-dark.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/jett-skills-four-black.svg") center center no-repeat
+        background-size: contain
+
+  .header__agent-item-sova.header__agent-item--active &
+    span
+      &:nth-child(1)
+        background: url("img/sova-skills-one-dark.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/sova-skills-two-dark.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/sova-skills-three-dark.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/sova-skills-four-dark.svg") center center no-repeat
+        background-size: contain
+
+
+  .header__agent-item-sage.header__agent-item--active &
+    span
+      &:nth-child(1)
+        background: url("img/sage-skills-one-dark.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(2)
+        background: url("img/sage-skills-two-dark.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(3)
+        background: url("img/sage-skills-three-dark.svg") center center no-repeat
+        background-size: contain
+
+      &:nth-child(4)
+        background: url("img/sage-skills-four-dark.svg") center center no-repeat
+        background-size: contain
+
+
+.header__skills
+  display: flex
+  flex-wrap: wrap
+  gap: 20px
+  padding: 0 10px
+
+  +min-w($tablet)
+    justify-content: space-between
+    padding: 0 30px
+    box-sizing: border-box
+
+.header__skill-item
+  padding: 5px 10px
+  background: $default_white
+  outline: 2px solid #000000
+  position: relative
+  width: 100%
+
+  +min-w($tablet)
+    max-width: calc(50% - 10px)
+
+  +min-w($desktop)
+    max-width: calc(25% - 15px)
+    padding: 10px 20px
+
+
+.header__skill-item-title
+  font-family: 'Kanit', sans-serif
+  font-weight: 400
+  font-size: 25px
+  line-height: 28px
+  color: #C4C4C4
+  margin-bottom: 10px
+
+  +min-w($desktop_full)
+    font-size: 40px
+    line-height: 52px
+
+.header__skill-item-subtitle
+  font-family: 'Kanit', sans-serif
+  font-weight: 600
+  font-size: 20px
+  line-height: 25px
+  color: #000000
+  margin-bottom: 12px
+
+  +min-w($desktop_full)
+    font-size: 24px
+    line-height: 31px
+
+.header__skill-item-text
+  font-family: 'Kanit', sans-serif
+  font-weight: 200
+  font-size: 15px
+  line-height: 20px
+  color: #1F2326
+  letter-spacing: 1px
+
+  +min-w($desktop_full)
+    font-size: 16px
+    line-height: 20px
+    width: 60%
+
+.header__skill-item-skill
+  display: block
+  width: 60px
+  height: 60px
+  background: $default_red
+  position: absolute
+  right: 20px
+  top: 0
+
+  &:before
+    content: ''
+    background: url("img/jett-skills-one-black.svg") 0 0 no-repeat
+    background-size: contain
+    width: 60px
+    height: 60px
+    position: absolute
+    bottom: -10px
+    left: -11px
+
+  +min-w($desktop_full)
+    width: 100px
+    height: 102px
+    bottom: 0
+    top: auto
+    right: 35px
+
+    &:before
+      width: 90px
+      height: 90px
+      bottom: auto
+      left: auto
+      top: -29px
+      right: -24px
+      transition: 0.1s
+
+
+  .header__skill-item:nth-child(1) &
+    &:before
+      background: url("img/jett-skills-one-black.svg") 0 0 no-repeat
+      background-size: contain
+
+    .header__skills--phoenix &
+      &:before
+        background: url("img/phoenix-skills-one-black.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--jett &
+      &:before
+        background: url("img/jett-skills-one-black.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--sova &
+      &:before
+        background: url("img/sova-skills-one-dark.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--sage &
+      &:before
+        background: url("img/sage-skills-one-dark.svg") 0 0 no-repeat
+        background-size: contain
+
+  .header__skill-item:nth-child(2) &
+    &:before
+      background: url("img/jett-skills-two-black.svg") 0 0 no-repeat
+      background-size: contain
+
+    .header__skills--phoenix &
+      &:before
+        background: url("img/phoenix-skills-two-black.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--jett &
+      &:before
+        background: url("img/jett-skills-two-black.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--sova &
+      &:before
+        background: url("img/sova-skills-two-dark.svg") 0 16px no-repeat
+        background-size: contain
+
+    .header__skills--sage &
+      &:before
+        background: url("img/sage-skills-two-dark.svg") 0 0 no-repeat
+        background-size: contain
+
+  .header__skill-item:nth-child(3) &
+    &:before
+      background: url("img/jett-skills-three-dark.svg") 0 0 no-repeat
+      background-size: contain
+
+    .header__skills--phoenix &
+      &:before
+        background: url("img/phoenix-skills-three-black.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--jett &
+      &:before
+        background: url("img/jett-skills-three-dark.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--sova &
+      &:before
+        background: url("img/sova-skills-three-dark.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--sage &
+      &:before
+        background: url("img/sage-skills-three-dark.svg") 0 0 no-repeat
+        background-size: contain
+
+  .header__skill-item:nth-child(4) &
+    &:before
+      background: url("img/jett-skills-four-black.svg") 0 0 no-repeat
+      background-size: contain
+
+    .header__skills--phoenix &
+      &:before
+        background: url("img/phoenix-skills-four-black.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--jett &
+      &:before
+        background: url("img/jett-skills-four-black.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--sova &
+      &:before
+        background: url("img/sova-skills-four-dark.svg") 0 0 no-repeat
+        background-size: contain
+
+    .header__skills--sage &
+      &:before
+        background: url("img/sage-skills-four-dark.svg") 0 0 no-repeat
+        background-size: contain

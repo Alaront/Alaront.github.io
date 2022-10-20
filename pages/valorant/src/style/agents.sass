@@ -1,0 +1,263 @@
+@import "config"
+
+.section-agents
+  background: url("./img/agents-bg.png") center center no-repeat, #101822
+  background-size: cover
+  overflow: hidden
+
+.section-agents--guns
+  background: url("./img/guns-bg.png") center center no-repeat, #101822
+  background-size: cover
+
+.section-agents__wrapper
+  padding: 30px 10px 10px 10px
+  position: relative
+
+  +min-w($tablet)
+    padding: 60px 100px 0 100px
+
+  +min-w($desktop)
+    max-width: 1920px
+    padding: 60px 40px 0 40px
+    margin: 0 auto
+
+  +min-w($desktop_full_plus)
+    padding: 60px 140px 100px 140px
+    overflow: hidden
+
+.section-agents__title
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 700
+  font-size: 24px
+  line-height: 30px
+  color: $default_color_text
+  text-align: center
+  margin-bottom: 40px
+  position: relative
+  z-index: 2
+
+  +min-w($tablet)
+    font-size: 51px
+    line-height: 60px
+    margin-bottom: 40px
+
+  +min-w($desktop)
+    font-size: 67px
+    line-height: 80px
+    margin-bottom: 34px
+
+  +min-w($desktop_full_plus)
+    margin-bottom: 54px
+    text-align: left
+    padding-left: 95px
+
+.section-agents__title-wrapper
+  position: relative
+  overflow: hidden
+
+  &:before
+    content: attr(data-title)
+    position: absolute
+    font-family: 'Source Sans Pro', sans-serif
+    top: -12px
+    left: 50%
+    transform: translateX(-50%)
+    font-weight: 600
+    font-size: 37px
+    line-height: 60px
+    color: rgba(236, 232, 225, 0.1)
+    width: 100%
+    max-width: max-content
+
+    +min-w($tablet)
+      font-size: 73px
+      line-height: 60px
+      top: 3px
+
+    +min-w($desktop)
+      font-size: 91px
+      line-height: 99px
+
+    +min-w($desktop_full_plus)
+      font-size: 106px
+      line-height: 120px
+      top: -20px
+      left: 14%
+
+      .section-agents--guns &
+        left: 11%
+
+      .section-maps &
+        left: 8%
+
+.section-agents__content
+  +min-w($desktop)
+    display: flex
+    align-items: center
+
+.section-agents__photo
+  width: 100%
+  margin: 0 auto 42px auto
+
+  span
+    display: none
+
+  img
+    display: block
+    margin: 0 auto
+
+  +min-w($tablet)
+    position: relative
+
+    span
+      position: absolute
+      top: 301px
+      right: 50%
+      font-family: 'Source Sans Pro', sans-serif
+      font-weight: 600
+      font-size: 100px
+      line-height: 126px
+      transform: rotate(90deg) translateY(calc(-50% - 527px))
+      -webkit-text-stroke-width: 1px
+      -webkit-text-stroke-color: #FF8540
+      color: rgba(255,255,255,0)
+      white-space: nowrap
+      z-index: 1
+      display: block
+
+    .section-agents--guns &
+      &:after
+        content: ''
+
+
+    img
+      max-width: 533px
+      position: relative
+      z-index: 2
+
+  +min-w($desktop)
+    order: 1
+
+.section-agents__text
+  p
+    font-family: 'Source Sans Pro', sans-serif
+    color: $default_color_text
+    font-weight: 400
+    font-size: 13px
+    line-height: 18px
+    margin-bottom: 44px
+
+    +min-w($tablet)
+      font-size: 15px
+      line-height: 22px
+
+    +min-w($desktop)
+      margin-bottom: 104px
+      font-size: 20px
+      line-height: 25px
+
+.button__wrapper
+  width: 168px
+  height: 48px
+  margin: 0 auto 44px auto
+  position: relative
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+
+  button
+    display: block
+    width: 160px
+    height: 40px
+    position: relative
+    background: $default_color_text
+    overflow: hidden
+
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: url(img/agents-btn-bg.svg) center center no-repeat
+      background-size: 157px 28px
+      z-index: 2
+
+      .section-agents--guns &
+        background: url(img/guns-btn-bg.svg) center center no-repeat
+        background-size: auto
+
+    &:before
+      content: ''
+      position: absolute
+      top: -45px
+      left: -12px
+      width: 0
+      height: 280%
+      background: #18212a
+      z-index: 1
+      transform: rotate(18deg)
+      transition: 0.5s
+
+
+  &:after
+    content: ''
+    position: absolute
+    width: calc(50% - 10px)
+    height: 100%
+    left: 0
+    top: 0
+    border: 1px solid $default_color_text
+    border-right: none
+    transition: 0.2s
+
+    .section-agents--guns &
+      width: 100%
+      height: calc(50% - 10px)
+      border: 1px solid $default_color_text
+      border-bottom: none
+
+  &:before
+    content: ''
+    position: absolute
+    width: calc(50% - 10px)
+    height: 100%
+    right: 0
+    top: 0
+    border: 1px solid $default_color_text
+    border-left: none
+    transition: 0.2s
+
+    .section-agents--guns &
+      width: 100%
+      height: calc(50% - 10px)
+      bottom: 0
+      top: auto
+      border: 1px solid $default_color_text
+      border-top: none
+
+  &:hover
+    &:after
+      width: 50%
+
+    &:before
+      width: 50%
+
+    button
+
+      &:before
+        width: 119%
+
+
+  +min-w($desktop)
+    width: 280px
+    height: 80px
+    margin-bottom: 104px
+    background-size: 124px 24px
+
+    button
+      width: 260px
+      height: 60px
+
