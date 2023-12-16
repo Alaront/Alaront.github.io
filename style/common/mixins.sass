@@ -1,0 +1,27 @@
+=min-w($width)
+  @media screen and (min-width: $width)
+    @content
+
+=min-h($height)
+  @media screen and (min-height: $height)
+    @content
+
+=max-h($height)
+  @media screen and (max-height: $height)
+    @content
+
+=max-w($width)
+  @media screen and (max-width: $width)
+    @content
+
+=between-w($min, $max)
+  @media screen and (min-width: $min) and (max-height: $max)
+    @content
+
+=media-max-min-height($max, $min)
+  @media screen and (max-height: $max) and (min-height: $min)
+    @content
+
+=check-orientation-landscape()
+  @media screen and (orientation &:landscape)
+    @content
