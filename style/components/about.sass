@@ -1,0 +1,81 @@
+@keyframes bg-animation
+  100%
+    background-position: 52px 26px
+
+
+.about
+  min-height: 100vh
+  transition: 0.5s
+  display: flex
+  flex-direction: row
+  align-items: stretch
+
+  &.special-bg
+    background: $color_lime
+    padding: 20px
+
+    +min-w($desktop)
+      padding: 40px
+
+.about__wrapper
+  width: 100%
+  background-image: url("/assets/decor/pattern.png")
+  background-color: rgba(255,255,255,0.7)
+  background-blend-mode: lighten
+  display: flex
+  justify-content: center
+  animation: bg-animation 5s infinite
+  animation-timing-function: linear
+
+
+.about__text-wrapper
+  display: flex
+  justify-content: center
+  flex-direction: column
+  max-width: 1672px
+  width: 100%
+
+  +min-w($desktop)
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+.about__title
+  font-family: "Nova Square"
+  font-size: 45px
+  line-height: 52px
+  font-weight: 600
+  margin: 0 auto 20px auto
+
+  +min-w($tablet)
+    font-size: 55px
+    line-height: 62px
+    margin: 0 auto 40px auto
+
+  +min-w($desktop)
+    font-size: 90px
+    line-height: 100px
+    margin: -50px 0 0 0
+
+.about__text
+  max-width: 995px
+  font-family: "Afacad", sans-serif
+  padding: 0 20px
+  margin: 0 auto
+  font-size: 20px
+  font-style: normal
+  font-weight: 400
+  line-height: 25px
+
+  +min-w($tablet)
+    font-size: 30px
+    line-height: 35px
+
+  +min-w($desktop)
+    font-size: 40px
+    line-height: 45px
+    margin: 20vh 0 0 0
+
+  +min-w($desktop_plus)
+    padding: 0
+
