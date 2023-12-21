@@ -1,0 +1,136 @@
+@keyframes bg-animation
+  100%
+    background-position: 52px 26px
+
+
+.portfolio
+  min-height: 100vh
+  transition: 0.5s
+  display: flex
+  flex-direction: row
+  align-items: stretch
+
+  &.special-bg
+    background: $color_lime
+    padding: 20px
+
+    +min-w($desktop)
+      padding: 40px
+
+.portfolio__wrapper
+  width: 100%
+  background-image: url("/assets/decor/pattern.png")
+  background-color: rgba(255,255,255,0.7)
+  background-blend-mode: lighten
+  animation: bg-animation 5s infinite
+  animation-timing-function: linear
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.portfolio__content
+  padding: 0 20px
+  max-width: 1672px
+  width: 100%
+  margin: 0 auto
+
+  +min-w($desktop)
+    padding: 0
+
+.portfolio__text
+  margin-bottom: 20px
+
+  +min-w($desktop)
+    margin-bottom: 10vh
+
+  h5
+    color: $color_black
+    font-family: "Nova Square"
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 25px
+
+    +min-w($tablet)
+      font-size: 34px
+      line-height: 45px
+
+    +min-w($desktop)
+      font-size: 64px
+      line-height: 75px
+
+  p
+    color: #000
+    font-family: "Afacad", sans-serif
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: 25px
+
+    +min-w($tablet)
+      font-size: 25px
+      line-height: 35px
+
+    +min-w($desktop)
+      font-size: 35px
+      line-height: 45px
+
+.portfolio__items
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  li
+    width: 35vw
+    height: 35vw
+    background: $color_black
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    overflow: hidden
+    max-width: 120px
+    max-height: 120px
+    margin: 0 10px 10px 10px
+    transition: 0.3s
+    position: relative
+
+    +min-w($tablet)
+      max-width: 150px
+      max-height: 150px
+
+    +min-w($desktop)
+      max-width: 215px
+      max-height: 215px
+      margin: 0 3%
+
+      &:hover
+        background: $color_lime
+
+      &:nth-child(1)
+        top: 5vh
+
+      &:nth-child(3)
+        top: 10vh
+
+      &:nth-child(4)
+        top: -3vh
+
+      &:nth-child(5)
+        top: 12vh
+
+    a
+      color: $color_white
+      font-family: "Righteous"
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 22px
+      text-decoration: none
+      +min-w($tablet)
+        font-size: 20px
+        line-height: 30px
+
+      +min-w($desktop)
+        font-size: 25px
+        line-height: 35px
