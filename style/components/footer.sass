@@ -1,4 +1,4 @@
-.about
+.footer
   min-height: 100vh
   transition: 0.5s
   display: flex
@@ -12,65 +12,66 @@
     +min-w($desktop)
       padding: 40px
 
-.about__wrapper
+.footer__wrapper
   width: 100%
   background-image: url("/assets/decor/pattern.png")
   background-color: rgba(255,255,255,0.7)
   background-blend-mode: lighten
-  display: flex
-  justify-content: center
   animation: bg-animation 5s infinite
   animation-timing-function: linear
-
-
-.about__text-wrapper
   display: flex
-  justify-content: center
   flex-direction: column
-  max-width: 1672px
-  width: 100%
+  justify-content: center
+  align-items: center
 
-  +min-w($desktop)
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-
-.about__title
+.footer__title
+  color: $color_black
   font-family: "Nova Square"
+  font-style: normal
+  font-weight: 400
   font-size: 45px
   line-height: 52px
-  font-weight: 600
-  margin: 0 auto 20px auto
+  margin: 0 0 5vh 0
 
   +min-w($tablet)
     font-size: 55px
     line-height: 62px
-    margin: 0 auto 40px auto
 
   +min-w($desktop)
     font-size: 90px
     line-height: 100px
-    margin: -50px 0 0 0
 
-.about__text
-  max-width: 995px
-  font-family: "Afacad", sans-serif
-  padding: 0 20px
+.footer__links
+  width: 100%
+  max-width: 282px
+  display: flex
+  justify-content: space-between
   margin: 0 auto
-  font-size: 20px
+
+.footer__git
+  img
+    width: 102px
+    height: 102px
+    object-fit: contain
+
+.footer__hubr
+  img
+    width: 135px
+    height: 135px
+    object-fit: contain
+
+.footer__email
+  color: $color_black
+  font-family: "Nova Square"
   font-style: normal
   font-weight: 400
-  line-height: 25px
+  font-size: 25px
+  line-height: 32px
 
   +min-w($tablet)
-    font-size: 30px
-    line-height: 35px
+    font-size: 45px
+    line-height: 52px
 
   +min-w($desktop)
-    font-size: 40px
-    line-height: 45px
-    margin: 20vh 0 0 0
-
-  +min-w($desktop_plus)
-    padding: 0
-
+    font-size: 50px
+    line-height: 60px
