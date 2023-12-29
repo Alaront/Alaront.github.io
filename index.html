@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--    <link rel="stylesheet" type="text/css" href="fullpage.css" />-->
+
+<!--    &lt;!&ndash; This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". &ndash;&gt;-->
+<!--    <script src="vendors/easings.min.js"></script>-->
+
+<!--    <script type="text/javascript" src="fullpage.js"></script>-->
     <title>Vite App</title>
   </head>
   <body>
     <template data-type="pug" data-src="./components/header/header.pug"></template>
-    <template data-type="pug" data-src="./components/blocks/about.pug"></template>
-    <template data-type="pug" data-src="./components/blocks/skills.pug"></template>
-    <template data-type="pug" data-src="./components/blocks/portfolio.pug"></template>
-    <template data-type="pug" data-src="./components/blocks/footer.pug"></template>
+    <div id="fullpage">
+      <template data-type="pug" data-src="./components/blocks/about.pug"></template>
+      <template data-type="pug" data-src="./components/blocks/skills.pug"></template>
+      <template data-type="pug" data-src="./components/blocks/portfolio.pug"></template>
+      <template data-type="pug" data-src="./components/blocks/footer.pug"></template>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
