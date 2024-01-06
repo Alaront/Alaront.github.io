@@ -29,7 +29,7 @@ export default class Page {
         const $this = this;
 
         this.pageInit = new fullpage('#fullpage', {
-            anchors: ['about', 'skills', 'portfolio', 'footer'],
+            anchors: ['about', 'skills', 'portfolio', 'portfolioSlider', 'footer'],
 
             scrollingSpeed: 800,
             sectionSelector: 'section',
