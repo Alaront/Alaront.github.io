@@ -8,19 +8,32 @@ export default class Page {
 
     init() {
         this.menuItems = [...document.querySelectorAll('.header__menu li')]
+        this.projectsItems = [...document.querySelectorAll('.portfolio__items li')]
 
-        this.fullpageInit();
-        this.eventInit();
+        if(this.checkSystem) {
+            console.log(this.checkSystem)
+            this.fullpageInit();
+            this.eventInit();
+        }
     }
 
     eventInit() {
         this.menuInit();
+        this.projectsBtn();
     }
 
     menuInit() {
         this.menuItems.forEach(item => {
             item.addEventListener('click', () => {
                 this.pageInit.moveTo(item.dataset.type, 0)
+            })
+        })
+    }
+
+    projectsBtn() {
+        this.projectsItems.forEach(item => {
+            item.addEventListener('click', () => {
+                this.pageInit.moveTo('portfolioSlider', item.dataset.index)
             })
         })
     }
@@ -49,10 +62,14 @@ export default class Page {
                 $this.menuItems.forEach(item => {
                     item.classList.remove('active')
 
-                    if(item.dataset.type === destination.anchor) item.classList.add('active')
+                    if((item.dataset.type === destination.anchor) || (item.dataset.type === 'portfolio' && destination.anchor === 'portfolioSlider')) item.classList.add('active')
                 })
             }
         });
+    }
+
+    get checkSystem() {
+        return window.innerHeight > 560
     }
 }
 

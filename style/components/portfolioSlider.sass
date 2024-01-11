@@ -5,12 +5,8 @@
   flex-direction: row
   align-items: stretch
 
-//&.special-bg
-//  background: $color_lime
-//  padding: 20px
-//
-//  +min-w($desktop)
-//    padding: 40px
+  +max-h($minH)
+    flex-wrap: wrap
 
 .portfolio-slider .slide
   width: 100%
@@ -29,6 +25,9 @@
   flex-direction: column
   justify-content: center
   height: 90vh
+
+  +max-h($minH)
+    margin-bottom: 30px
 
   +min-w($desktop)
     flex-direction: row
