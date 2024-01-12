@@ -1,0 +1,245 @@
+.portfolio-slider
+  min-height: 100vh
+  transition: 0.5s
+  display: flex
+  flex-direction: row
+  align-items: stretch
+
+  +max-h($minH)
+    flex-wrap: wrap
+
+.portfolio-slider .slide
+  width: 100%
+  background-image: url("/assets/decor/pattern.png")
+  background-color: rgba(255,255,255,0.7)
+  background-blend-mode: lighten
+  animation: bg-animation 5s infinite
+  animation-timing-function: linear
+
+.slide__content
+  width: 100%
+  max-width: 1672px
+  margin: 0 auto
+  padding: 0 20px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 90vh
+
+  +max-h($minH)
+    margin-bottom: 30px
+
+  +min-w($desktop)
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+.slide__text
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+
+  +min-w($desktop)
+    width: 45%
+
+  a
+    text-decoration: none
+    padding-left: 30px
+    position: relative
+    color: $color_black
+    font-family: "Righteous"
+    font-size: 24px
+    font-style: normal
+    font-weight: 400
+    line-height: 32px
+    display: block
+    margin: 0 0 8px 0
+    max-width: max-content
+
+    &:before
+      content: ''
+      width: 25px
+      height: 25px
+      background: url("/assets/decor/share.svg") no-repeat center
+      background-size: contain
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+
+    +min-w($tablet)
+      font-size: 44px
+      line-height: 52px
+      margin: 0 0 12px 0
+      padding-left: 50px
+
+      &:before
+        width: 45px
+        height: 45px
+
+    +min-w($desktop)
+      font-size: 64px
+      line-height: 72px
+      margin: 0 0 18px 0
+      padding-left: 60px
+
+      &:before
+        width: 55px
+        height: 55px
+
+    &:nth-child(2)
+      font-size: 20px
+      line-height: 25px
+      margin: 0 0 10px 0
+
+      +min-w($tablet)
+        font-size: 34px
+        line-height: 42px
+        margin: 0 0 15px 0
+
+      +min-w($desktop)
+        font-size: 34px
+        line-height: 42px
+        margin: 0 0 20px 0
+
+      &:before
+        background: url("/assets/decor/code.svg") no-repeat center
+        background-size: contain
+
+
+.slide__text-info
+  margin-bottom: 10px
+
+  +min-w($tablet)
+    margin-bottom: 20px
+
+  +min-w($desktop)
+    margin-bottom: 40px
+
+
+  h3
+    color: $color_black
+    font-family: "Righteous"
+    font-size: 19px
+    font-style: normal
+    font-weight: 400
+    line-height: 22px
+    margin-bottom: 5px
+
+    +min-w($tablet)
+      font-size: 25px
+      line-height: 28px
+      margin-bottom: 10px
+
+    +min-w($desktop)
+      font-size: 30px
+      line-height: 35px
+      margin-bottom: 15px
+
+  ul
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    gap: 5px
+
+    li
+      color: $color_white
+      font-family: "Righteous"
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: 19px
+      padding: 5px 10px
+      background: $color_black
+      transition: 0.2s
+      border-radius: 50px
+      overflow: hidden
+
+      +min-w($tablet)
+        padding: 10px 15px
+        font-size: 20px
+        line-height: 22px
+
+      +min-w($desktop)
+        font-size: 25px
+        line-height: 35px
+
+        &:hover
+          background: $color_lime
+          color: $color_black
+
+.slide__photo
+  width: 100%
+  height: 45vh
+  max-height: 800px
+  border: 10px solid $color_black
+
+  +min-w($desktop)
+    width: 50%
+    height: 60vh
+
+  .swiper
+    height: 100%
+
+  .swiper-wrapper
+    align-items: stretch
+
+  .swiper-slide
+    height: auto
+
+  .swiper-portfolio-button-prev, .swiper-portfolio-button-next
+
+
+    &:after
+      content: none
+
+    padding: 15px
+    background: $color_black url("/assets/decor/arrow.svg") no-repeat center
+    background-size: contain
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    overflow: hidden
+    top: auto
+
+  .swiper-portfolio-button-prev
+    bottom: 10px
+    left: 50%
+    transform: translateX(-20px)
+
+  .swiper-portfolio-button-next
+    bottom: 10px
+    left: 50%
+    transform: translateX(20px) rotate(180deg)
+
+  .swiper-portfolio-pagination.swiper-pagination
+    display: flex
+    flex-direction: column
+    top: 50%
+    transform: translateY(-50%)
+    height: max-content
+    left: 5px
+
+    .swiper-pagination-bullet
+      margin-bottom: 5px
+      transition: 0.2s
+
+      &.swiper-pagination-bullet-active
+        background: $color_black
+        width: 16px
+        border-radius: 16px
+
+.slide__photo-item
+  position: absolute
+  border-radius: 5px
+  overflow: hidden
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+
+

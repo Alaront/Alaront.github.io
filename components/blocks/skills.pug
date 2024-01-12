@@ -1,0 +1,46 @@
+- var technologiesFront = [ {  'title': "Front-end",  'data': ["JavaScript", "Vue.js", "React.js", "TypeScript", "Redux", "JQuery", "Socket.IO", "other libraries"] } ]
+- var technologiesBack = [ {  'title': "Back-end",  'data': ["Nuxt.js", "Node.js", "Express", "PostgreSQL", "MongoDB", "Axios", "Sequelize"] } ]
+- var technologiesMarkup = [ {  'title': "Markup",  'data': ["Sass/Less", "HTML", "Pug/Slim", "Bootstrap"] } ]
+- var technologiesTools = [ {  'title': "Tools",  'data': ["Webpack", "Vite", "Npm/Yarn", "Gulp", "Git", "JQuery"] } ]
+
+section.skills.section
+    .skills__wrapper
+        .skills__content
+            .skills__text
+                p
+                    | I have various skills in front-end development.
+                    br
+                    |I don’t stop there and try to become better at what I do.
+                h5  Main skills:
+            .skills__technologies
+                each val, index in technologiesFront
+                    .skills__technologies-item
+                        p= val.title
+                        ul
+                            each listV, index in val.data
+                                li= listV
+
+                each val, index in technologiesBack
+                    .skills__technologies-item
+                        p= val.title
+                        ul
+                            each listV, index in val.data
+                                li= listV
+
+                each val, index in technologiesMarkup
+                    .skills__technologies-item
+                        p= val.title
+                        ul
+                            each listV, index in val.data
+                                li= listV
+
+                each val, index in technologiesTools
+                    .skills__technologies-item
+                        p= val.title
+                        ul
+                            each listV, index in val.data
+                                li= listV
+
+
+
+

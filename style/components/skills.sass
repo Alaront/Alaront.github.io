@@ -1,0 +1,146 @@
+.skills
+  min-height: 100vh
+  transition: 0.5s
+  display: flex
+  flex-direction: row
+  align-items: stretch
+
+  //&.special-bg
+  //  background: $color_lime
+  //  padding: 20px
+  //
+  //  +min-w($desktop)
+  //    padding: 40px
+
+.skills__wrapper
+  width: 100%
+  background-image: url("/assets/decor/pattern.png")
+  background-color: rgba(255,255,255,0.7)
+  background-blend-mode: lighten
+  animation: bg-animation 5s infinite
+  animation-timing-function: linear
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 100vh
+
+.skills__content
+  padding: 0 20px
+  max-width: 1672px
+  width: 100%
+  margin: 0 auto
+
+  +min-w($desktop)
+    padding: 0
+
+.skills__text
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 10px
+
+  +min-w($desktop)
+    margin-bottom: 10vh
+
+  h5
+    color: $color_black
+    font-family: "Nova Square"
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 25px
+
+    +min-w($tablet)
+      font-size: 34px
+      line-height: 45px
+
+    +min-w($desktop)
+      font-size: 64px
+      line-height: 75px
+
+  p
+    color: #000
+    font-family: "Afacad", sans-serif
+    font-size: 20px
+    font-style: normal
+    font-weight: 500
+    line-height: 25px
+
+    +min-w($tablet)
+      font-size: 25px
+      line-height: 35px
+
+    +min-w($desktop)
+      font-size: 35px
+      line-height: 45px
+
+.skills__technologies
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+
+.skills__technologies-item
+  width: 45%
+  margin-bottom: 20px
+
+  +min-w($desktop)
+    margin-bottom: 7vh
+
+  p
+    color: #000
+    font-family: "Afacad", sans-serif
+    font-size: 20px
+    font-style: normal
+    font-weight: 500
+    line-height: 25px
+    margin-bottom: 10px
+
+    +min-w($tablet)
+      font-size: 25px
+      line-height: 35px
+
+    +min-w($desktop)
+      font-size: 35px
+      line-height: 45px
+      margin-bottom: 25px
+
+  ul
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+
+    +min-w($desktop)
+      gap: 25px
+
+    li
+      color: $color_white
+      background: $color_black
+      border-radius: 50px
+      overflow: hidden
+      font-family: "Righteous"
+      font-size: 18px
+      font-style: normal
+      font-weight: 400
+      line-height: 25px
+      padding: 5px 10px
+      transition: 0.2s
+
+      +min-w($tablet)
+        font-size: 20px
+        line-height: 30px
+
+      +min-w($desktop)
+        font-size: 25px
+        line-height: 35px
+        padding: 5px 25px
+
+      &:hover
+        color: $color_black
+        background: $color_lime
+
+      &:nth-child(n+5)
+        display: none
+
+        +min-w($tablet)
+            display: block
