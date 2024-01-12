@@ -10,10 +10,11 @@ import 'lightgallery/css/lightgallery.css';
 
 export default class Slider {
     init() {
+        this.preparingUrl();
         this.portfolioSliderInit();
     }
 
-    portfolioSliderInit(){
+    portfolioSliderInit() {
         const $this = this;
         this.portfolioSlider = new Swiper('.js-portfolio-slider', {
             modules: [Navigation, Pagination],
@@ -44,5 +45,13 @@ export default class Slider {
         $lgSwiper.addEventListener("lgBeforeClose", () => {
             swiper.slideTo(lg.index, 0);
         });
+    }
+
+    preparingUrl() {
+        const allPhoto = [...document.querySelectorAll('.js-portfolio-gallery .slide__photo-item')]
+
+        allPhoto.forEach(item => {
+            item.dataset.src = `${window.location.origin}${item.dataset.src}`
+        })
     }
 }
