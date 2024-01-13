@@ -51,7 +51,7 @@ export default class Slider {
         const allPhoto = [...document.querySelectorAll('.js-portfolio-gallery .slide__photo-item')]
 
         allPhoto.forEach(item => {
-            item.dataset.src = `${window.location.origin}${item.dataset.src}`
+            item.dataset.src = item.querySelector('img').src
         })
     }
 }
