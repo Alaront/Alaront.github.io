@@ -9,11 +9,12 @@ export default class Page {
     init() {
         this.menuItems = [...document.querySelectorAll('.header__menu li')]
         this.projectsItems = [...document.querySelectorAll('.portfolio__items li')]
+        this.projectsItemsLinks = [...document.querySelectorAll('.slide__text a')]
 
         if(this.checkSystem) {
-            console.log(this.checkSystem)
             this.fullpageInit();
             this.eventInit();
+            this.metrikaClickLinks();
         }
     }
 
@@ -33,6 +34,7 @@ export default class Page {
     projectsBtn() {
         this.projectsItems.forEach(item => {
             item.addEventListener('click', () => {
+                this.metrikaClickBtn(item.dataset.index)
                 this.pageInit.moveTo('portfolioSlider', item.dataset.index)
             })
         })
@@ -66,6 +68,53 @@ export default class Page {
                 })
             }
         });
+    }
+
+    metrikaClickLinks()  {
+        this.projectsItemsLinks.forEach(item => {
+            item.addEventListener('click', e => {
+                const index = e.target.dataset.id;
+                switch (index) {
+                    case 0:
+                        ym(96345008,'reachGoal','link-silkway2022')
+                    case 1:
+                        ym(96345008,'reachGoal','link-PernShop')
+                    case 2:
+                        ym(96345008,'reachGoal','link-PernShop-Code')
+                    case 3:
+                        ym(96345008,'reachGoal','link-x.travelask')
+                    case 4:
+                        ym(96345008,'reachGoal','link-Valorant')
+                    case 5:
+                        ym(96345008,'reachGoal','link-Valorant-Code')
+
+                    default:
+                        break
+                }
+            })
+        })
+    }
+
+    metrikaClickBtn(index) {
+        if(!index) return
+
+        console.log(index)
+        switch (index) {
+            case 0:
+                ym(96345008,'reachGoal','btn-silkway')
+                break
+            case 1:
+                ym(96345008,'reachGoal','PERN-shop')
+                break
+            case 2:
+                ym(96345008,'reachGoal','x.travelask')
+                break
+            case 3:
+                ym(96345008,'reachGoal','valorant')
+                break
+            default:
+                break
+        }
     }
 
     get checkSystem() {
