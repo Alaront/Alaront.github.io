@@ -1,0 +1,90 @@
+@import "config"
+
+.nav
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 98
+  width: 100%
+
+.nav__wrapper
+  padding: 10px 10px
+  display: flex
+  justify-content: space-between
+  width: 100%
+  max-width: 1920px
+  margin: 0 auto
+
+  +min-w($tablet)
+    padding: 15px 30px
+
+.nav__btn
+  width: 60px
+  height: 60px
+  background: $default_red
+  padding: 22px 16px
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  cursor: pointer
+  border: 0.2px solid $default_color_text
+
+  span
+    width: 100%
+    background: $default_color_text
+    height: 2px
+
+.nav__links
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  transform: translateY(-115%)
+  transition: .3s
+
+  &.open-links
+    transform: translateY(0)
+
+  +min-w($tablet)
+    flex-direction: row
+    align-items: center
+
+  li
+    margin-bottom: 20px
+    background: $default_black
+    text-align: center
+    border-radius: 10px
+    transition: .3s
+
+    &:last-child
+      margin-bottom: 0
+
+    +min-w($tablet)
+      margin-bottom: 0
+      margin-right: 30px
+
+    &:hover
+      background: $default_color_text
+
+  a
+    font-family: 'Source Sans Pro', sans-serif
+    font-weight: 400
+    font-size: 24px
+    line-height: 26px
+    color: $default_color_text
+    text-decoration: none
+    cursor: pointer
+    transition: .3s
+    display: block
+    width: 100%
+    padding: 4px 7px
+
+    &:hover
+      color: $default_black
+
+    +min-w($tablet)
+      padding: 8px 18px
+
+    +min-w($desktop)
+      font-size: 24px
+      line-height: 26px
