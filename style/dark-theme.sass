@@ -1,0 +1,70 @@
+body.dark-theme
+  background: linear-gradient(51.06deg, rgba(40, 32, 58) 0.87%, rgb(31, 24, 83) 97.48%)
+
+  cursor: url('/assets/decor/cursor-dark.svg'), auto
+
+  ::selection
+    color: $color_with_dark
+    background: $color_blue
+
+  .about__wrapper, .footer__wrapper, .portfolio__wrapper, .skills__wrapper, .portfolio-slider .slide
+    background-color: $color_bg_dark
+
+
+
+  .header__menu li, .header__title, .about__title, .about__text, .skills__text p,
+  .skills__text h5, .skills__technologies-item p, .portfolio__text h5, .portfolio__text p,
+  .slide__text a, .slide__text-info h3, .footer__title, .footer__email
+    color: $color_with_dark
+
+  .skills__technologies-item ul li
+    &:hover
+      color: $color_with_dark
+      background: $color_blue
+
+  .portfolio__items li, .slide__text-info ul li
+    &:hover
+      background: $color_blue
+
+  .header__menu li.active:before
+    background: $color_blue
+
+  .about__title, .skills__technologies-item:nth-child(2), .portfolio__text p, .slide__text
+    position: relative
+    z-index: 1
+
+    &:before
+      content: ''
+      width: 800px
+      height: 800px
+      background: url("/assets/decor/bg-element.svg") no-repeat center
+      background-size: contain
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: -1
+
+  .portfolio__text
+    position: relative
+    z-index: 1
+
+  .skills__technologies-item
+    position: relative
+    z-index: 2
+
+    &:nth-child(2)
+      z-index: 1
+
+  .portfolio__items
+    position: relative
+    z-index: 2
+
+
+
+
+body.dark-theme *
+  cursor: url('/assets/decor/cursor-dark.svg'), auto
+
+  a, .header__menu li, .footer__links img, .fp-prev, .fp-next, .swiper-button-next, .swiper-button-pre, .lg-img-wrap, .lg-img-wrap img, .lg-container button
+    cursor: url('/assets/decor/cursor-hand-dark.svg'), auto!important
