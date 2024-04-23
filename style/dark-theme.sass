@@ -9,7 +9,8 @@ body.dark-theme
 
   .about__wrapper, .footer__wrapper, .portfolio__wrapper, .skills__wrapper, .portfolio-slider .slide
     background-color: $color_bg_dark
-
+    transition: 1s
+    overflow: hidden
 
 
   .header__menu li, .header__title, .about__title, .about__text, .skills__text p,
@@ -44,6 +45,7 @@ body.dark-theme
       left: 50%
       transform: translate(-50%, -50%)
       z-index: -1
+      max-height: 90vh
 
   .portfolio__text
     position: relative

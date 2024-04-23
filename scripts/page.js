@@ -10,6 +10,7 @@ export default class Page {
         this.menuItems = [...document.querySelectorAll('.header__menu li')]
         this.projectsItems = [...document.querySelectorAll('.portfolio__items li')]
         this.projectsItemsLinks = [...document.querySelectorAll('.slide__text a')]
+        this.themeBtn = document.querySelector('.js-theme-btn')
 
         if(this.checkSystem) {
             this.fullpageInit();
@@ -21,6 +22,7 @@ export default class Page {
     eventInit() {
         this.menuInit();
         this.projectsBtn();
+        this.changeTheme()
     }
 
     menuInit() {
@@ -29,6 +31,10 @@ export default class Page {
                 this.pageInit.moveTo(item.dataset.type, 0)
             })
         })
+    }
+
+    changeTheme() {
+        this.themeBtn.addEventListener('click', () => document.body.classList.toggle('dark-theme'))
     }
 
     projectsBtn() {
